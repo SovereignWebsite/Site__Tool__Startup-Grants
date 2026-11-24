@@ -1,0 +1,8 @@
+{
+ "agent": "startup-grants.a@SovereignWebsite.dinis",
+ "status": "active",
+ "session": "https://claude.ai/code/session_018yvwtLncdL4FKwnYNpqFHY",
+ "bundle": {
+  "sign": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEN+lGISGSzsBJ/y8lux/aQvaFTivg\nACFNYWWJ2Q+egkynX0mwFI8058pna+4vtt1rn9SX77LYi/st+rfTDB5JVw==\n-----END PUBLIC KEY-----\n"
+ }
+}
