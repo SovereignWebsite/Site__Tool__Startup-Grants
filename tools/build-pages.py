@@ -1,3 +1,4 @@
+# After this, run tools/add-picker.py: it re-adds the picker and the stylesheet hashes that this script does not write.
 # Builds the pages that read grants.json: /fit/, /provenance/, /plan/ and /graph/, from the layout of /start/.
 # python3 tools/build-pages.py   (run tools/build-data.py first)
 import json,re,html,os

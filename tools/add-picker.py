@@ -1,4 +1,5 @@
 # Puts the "Choose a design" picker after the header of every page in site/, and its stylesheet link in the head.
+# Every local stylesheet link also gets ?v=<content hash>, so a browser never serves an old copy at the same address.
 # Idempotent: it replaces what it put before. Run while designs are open for a pick; run with --remove once Dinis has picked.
 #   python3 tools/add-picker.py [--remove]
 import re,sys,subprocess,glob,os
@@ -12,9 +13,14 @@ def block(path):
     lis=''
     for n,name,desc,rec in D:
         cur=f' aria-current="page"' if path==f'/designs/round-2/d{n}/' else ''
-        lis+=f'<li><a href="/designs/round-2/d{n}/"{cur}><img src="/assets/designs/round2-d{n}.jpg" width="320" height="200" alt="" loading="lazy"><span class="n">{n}. {name}</span><span class="muted">{desc}</span>{"<br><span class=\"t\">Recommended</span>" if rec else ""}</a></li>'
+        lis+=f'<li><a href="/designs/round-2/d{n}/"{cur}><img src="/assets/designs/round2-d{n}.jpg" width="160" height="100" alt="" loading="lazy"><span class="n">{n}. {name}</span><span class="muted">{desc}</span>{"<br><span class=\"t\">Recommended</span>" if rec else ""}</a></li>'
     live='The live pages use the cards layout (design 1) until Dinis picks.'
     return f'<!--picker--><aside class="dp" aria-label="Choose a design"><div class="dp-in"><h2>Choose a design</h2><p>Five directions are open for a pick. {live} Tell the keeper the number, or open <a href="/designs/round-2/">the round 2 page</a> for the full list.</p><ul>{lis}</ul></div></aside><!--/picker-->'
+import hashlib
+def hashed(m):
+    p=root+m.group(1).lstrip('/')
+    h=hashlib.sha1(open(p,'rb').read()).hexdigest()[:10] if os.path.exists(p) else None
+    return f'href="{m.group(1)}?v={h}"' if h else m.group(0)
 n=0
 for f in glob.glob(root+'**/*.html',recursive=True):
     t=open(f).read()
@@ -30,5 +36,6 @@ for f in glob.glob(root+'**/*.html',recursive=True):
             continue
         t=t.replace('</head>','<link rel="stylesheet" href="/assets/picker.css">\n</head>',1)
         n+=1
+    t=re.sub(r'href="(/[^"?#]+\.css)(?:\?v=[0-9a-f]+)?"',hashed,t)
     open(f,'w').write(t)
 print('picker on',n,'pages')
