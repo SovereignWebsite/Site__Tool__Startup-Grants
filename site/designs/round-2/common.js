@@ -20,7 +20,7 @@
   competitions:function(){var oc=data.open_competitions;if(!oc||S.stage||S.sector||(S.country&&S.country!=='GB'))return [];var q=S.q.toLowerCase();
    return oc.items.filter(function(i){return !q||(i.title+' '+i.funder).toLowerCase().indexOf(q)>=0}).sort(function(a,b){return a.closes<b.closes?-1:1})},
   compNote:function(){var oc=data.open_competitions;return (S.stage||S.sector)?'Open UK competitions are not tagged by stage or sector, so they are hidden while those filters are set.':oc.note+' Source: Innovation Funding Service, checked '+oc.date_checked+'.'},
-  refresh:function(){var l=G.filtered();G.$('count').textContent=l.length+' of '+data.programmes.length+' programmes shown';
+  refresh:function(){var l=G.filtered(),oc=data.open_competitions,nc=G.competitions().length;G.$('count').textContent=l.length+' of '+data.programmes.length+' programmes and '+nc+' of '+(oc?oc.items.length:0)+' open UK competitions shown'+(nc===0&&oc&&(S.stage||S.sector)?' (competitions are hidden while stage or sector is set)':'');
    var n=(S.country?1:0)+(S.stage?1:0)+(S.sector?1:0),s=G.$('fsum');if(s)s.textContent=n?'Filters ('+n+' set)':'Filters';renderFn(l,data)},
   start:function(render){renderFn=render;
    fetch('/data/grants.json').then(function(r){return r.json()}).then(function(d){data=d;G.data=d;
