@@ -44,7 +44,7 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-si
 .family-credit summary::-webkit-details-marker{display:none}
 .family-credit summary::after{content:"";width:.35rem;height:.35rem;border:solid currentColor;border-width:0 1px 1px 0;transform:rotate(45deg) translateY(-2px)}
 .family-credit summary:hover,.family-credit summary:focus-visible,.family-credit[open] summary{color:var(--fam-strong)}
-.family-credit ul{position:absolute;right:0;top:100%;margin:.25rem 0 0;padding:.35rem 0;list-style:none;min-width:11rem;
+.family-credit ul{position:absolute;right:0;top:100%;margin:.25rem 0 0;padding:.35rem 0;list-style:none;min-width:0;width:100%;max-width:100%;
   background:var(--fam-bg);border:1px solid rgba(127,127,127,.3);border-radius:6px;box-shadow:0 4px 16px rgba(0,0,0,.12)}
 .family-credit a{display:block;padding:.3rem .8rem;min-height:24px;color:var(--fam-fg);text-decoration:none}
 .family-credit a:hover,.family-credit a:focus-visible{color:var(--fam-strong);background:rgba(127,127,127,.1)}
@@ -64,13 +64,13 @@ code{font-size:.9em}main a,main code{overflow-wrap:anywhere}
 
 .tool{max-width:70rem}main.wide{max-width:70rem}
 .filters{display:flex;flex-wrap:wrap;gap:.75rem 1rem;margin:1.2rem 0;align-items:end}
-.filters label{display:flex;flex-direction:column;font-size:.85rem;color:var(--muted);gap:.2rem}
-.filters select,.filters input{font:inherit;font-size:1rem;padding:.45rem .6rem;border:1px solid var(--muted);border-radius:6px;background:var(--bg);color:var(--fg);min-width:11rem}
+.filters label{display:flex;flex-direction:column;flex:1 1 11rem;max-width:100%;min-width:0;font-size:.85rem;color:var(--muted);gap:.2rem}
+.filters select,.filters input{font:inherit;font-size:1rem;padding:.45rem .6rem;border:1px solid var(--muted);border-radius:6px;background:var(--bg);color:var(--fg);min-width:0;width:100%;max-width:100%}
 .filters button{font:inherit;padding:.45rem .9rem;border:1px solid var(--accent);background:transparent;color:var(--accent);border-radius:6px;cursor:pointer;min-height:44px}
 :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .count{color:var(--muted);margin:.5rem 0}
-.cards{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));gap:1rem}
-.card{border:1px solid var(--line);border-radius:8px;padding:1rem}
+.cards{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(20rem,100%),1fr));gap:1rem}
+.card{border:1px solid var(--line);border-radius:8px;padding:1rem;overflow-wrap:anywhere}
 .card h2{font-size:1.1rem;margin:0 0 .2rem}.card .org{color:var(--muted);font-size:.9rem;margin:0 0 .6rem}
 .tags{display:flex;flex-wrap:wrap;gap:.3rem;margin:.4rem 0}.tags span{font-size:.75rem;border:1px solid var(--line);border-radius:99px;padding:.05rem .5rem;color:var(--muted)}
 .card dl{margin:.5rem 0;font-size:.92rem}.card dt{font-weight:600;color:var(--fg);margin-top:.4rem}.card dd{margin:0;color:var(--muted)}
@@ -118,6 +118,7 @@ code{font-size:.9em}main a,main code{overflow-wrap:anywhere}
 <p class="count" id="count" role="status" aria-live="polite">Loading programmes</p>
 <ul class="cards" id="cards"></ul>
 <noscript><p>The filters need JavaScript. The full data is in <a href="/data/grants.json">grants.json</a>.</p></noscript>
+<section aria-labelledby="oc-h"><h2 id="oc-h">Open UK competitions</h2><p id="oc-note"></p><ul id="oc"></ul></section>
 <section class="gaps" aria-labelledby="gaps-h"><h2 id="gaps-h">Not yet written up</h2>
 <p>These items from the starting list are not yet in the tool, with the reason for each.</p><ul id="gaps"></ul></section>
 <h2>About the data</h2>
@@ -148,6 +149,7 @@ code{font-size:.9em}main a,main code{overflow-wrap:anywhere}
  fetch('/data/grants.json').then(function(r){return r.json()}).then(function(d){data=d;
   var cs=new Set(),st=new Set(),se=new Set();d.programmes.forEach(function(p){p.countries.forEach(function(x){cs.add(x)});p.stages.forEach(function(x){st.add(x)});p.sectors.forEach(function(x){se.add(x)})});
   opt($('f-country'),d.vocabularies.countries,cs);opt($('f-stage'),d.vocabularies.stages,st);opt($('f-sector'),d.vocabularies.sectors,se);
+  var oc=d.open_competitions;if(oc){$('oc-note').textContent=oc.note+' Source: Innovation Funding Service, checked '+oc.date_checked+'.';oc.items.slice().sort(function(a,b){return a.closes<b.closes?-1:1}).forEach(function(i){$('oc').appendChild(el('li',null,i.title+': closes '+i.closes+(i.award_text?'; '+i.award_text:'')+(i.funder?' ('+i.funder+')':'')))})}
   d.not_yet_read.forEach(function(g){var li=el('li',null,g.name+': '+g.reason);$('gaps').appendChild(li)});
   ['f-country','f-stage','f-sector'].forEach(function(i){$(i).addEventListener('change',render)});$('f-q').addEventListener('input',render);
   $('f-reset').addEventListener('click',function(){['f-country','f-stage','f-sector','f-q'].forEach(function(i){$(i).value=''});render()});render()

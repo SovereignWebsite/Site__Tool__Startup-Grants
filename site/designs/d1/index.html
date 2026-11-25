@@ -10,12 +10,12 @@ a{color:var(--accent)}.skip{position:absolute;left:-999px}.skip:focus{left:1rem;
 .top{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center;max-width:var(--w);margin:0 auto;padding:1.2rem 1rem}.top .name{font-weight:700;color:var(--fg);text-decoration:none}.top nav{margin-left:auto}
 main{max-width:var(--w);margin:0 auto;padding:0 1rem 4rem}h1{margin:.3rem 0 .6rem}
 :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
-.filters{display:flex;flex-wrap:wrap;gap:.7rem 1rem;align-items:end;margin:1rem 0}.filters label{display:flex;flex-direction:column;font-size:.85rem;color:var(--muted);gap:.2rem}
-.filters select,.filters input{font:inherit;padding:.45rem .6rem;border:1px solid var(--muted);border-radius:var(--r);background:var(--bg);color:var(--fg);min-width:11rem;min-height:44px}
+.filters{display:flex;flex-wrap:wrap;gap:.7rem 1rem;align-items:end;margin:1rem 0}.filters label{display:flex;flex-direction:column;flex:1 1 11rem;max-width:100%;min-width:0;font-size:.85rem;color:var(--muted);gap:.2rem}
+.filters select,.filters input{font:inherit;padding:.45rem .6rem;border:1px solid var(--muted);border-radius:var(--r);background:var(--bg);color:var(--fg);min-width:0;width:100%;max-width:100%;min-height:44px}
 .filters button{font:inherit;min-height:44px;padding:.4rem .9rem;border:1px solid var(--accent);background:transparent;color:var(--accent);border-radius:var(--r);cursor:pointer}
 .count{color:var(--muted)}.empty{font-style:italic;color:var(--muted)}.muted{color:var(--muted)}
 footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
-.cards{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));gap:1rem}.card{border:1px solid var(--line);border-radius:8px;padding:1rem}.card h2{font-size:1.1rem;margin:0}.card .org{color:var(--muted);font-size:.9rem;margin:.1rem 0 .5rem}.tags{display:flex;flex-wrap:wrap;gap:.3rem}.tags span{font-size:.75rem;border:1px solid var(--line);border-radius:99px;padding:.05rem .5rem;color:var(--muted)}dl{font-size:.92rem}dt{font-weight:600;margin-top:.4rem}dd{margin:0;color:var(--muted)}</style></head><body>
+.cards{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(20rem,100%),1fr));gap:1rem}.card{border:1px solid var(--line);border-radius:8px;padding:1rem;overflow-wrap:anywhere}.card h2{font-size:1.1rem;margin:0}.card .org{color:var(--muted);font-size:.9rem;margin:.1rem 0 .5rem}.tags{display:flex;flex-wrap:wrap;gap:.3rem}.tags span{font-size:.75rem;border:1px solid var(--line);border-radius:99px;padding:.05rem .5rem;color:var(--muted)}dl{font-size:.92rem}dt{font-weight:600;margin-top:.4rem}dd{margin:0;color:var(--muted)}</style></head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="top"><a class="name" href="/">Startup grants in Europe and the UK</a><nav aria-label="Designs"><a href="/designs/">All five designs</a></nav></header>
 <main id="main">

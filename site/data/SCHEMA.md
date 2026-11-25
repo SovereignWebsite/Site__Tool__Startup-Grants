@@ -19,6 +19,7 @@ Public data for reuse, including by PrompTugal News. Each programme is written b
 | `credits.starting_list` | The Notion starting list: `name`, `url`, `used_for`. |
 | `vocabularies` | `stages`, `sectors`, `countries`: code to plain label. |
 | `programmes` | Array of programmes (below). |
+| `open_competitions` | Time-limited UK competitions from the Innovation Funding Service: `source`, `date_checked`, `note` and `items` (`title`, `opens`, `closes`, `award_text`, `funder`, all as the listing states; empty if not stated). |
 | `not_yet_read` | Starting-list items not yet written up, each with `name`, `country`, `starting_list_url` and a plain `reason`. |
 
 ## Programme

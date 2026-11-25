@@ -473,7 +473,7 @@
     "https://www.gov.uk/guidance/seed-enterprise-investment-scheme"
    ],
    "date_checked": "2026-11-25",
-   "notes": "Page last updated 25 May 2023, according to the page read before the address moved; the new address was confirmed to load, but its text has not been re-read.",
+   "notes": "Page last updated 25 May 2023, according to the page. The address in further_official_urls is the earlier one, which now redirects here.",
    "in_starting_list": false
   },
   {
@@ -543,6 +543,189 @@
    "in_starting_list": false
   }
  ],
+ "open_competitions": {
+  "source": "https://apply-for-innovation-funding.service.gov.uk/competition/search",
+  "date_checked": "2026-11-25",
+  "nation": "GB",
+  "note": "All 25 competitions listed on the Innovation Funding Service on this date, none marked closed or paused. These are competitions with fixed closing dates, many for specific sectors or for collaborations. Eligibility on each competition page has not been read; check before applying. Funder is given only where the listing names one. An empty award means the listing states no total.",
+  "items": [
+   {
+    "title": "Increasing Energy Efficiency of AI Systems Strand 2",
+    "opens": "2026-11-24",
+    "closes": "2027-01-20",
+    "award_text": "",
+    "funder": ""
+   },
+   {
+    "title": "Increasing Energy Efficiency of AI Systems Strand 1",
+    "opens": "2026-11-24",
+    "closes": "2027-01-20",
+    "award_text": "",
+    "funder": ""
+   },
+   {
+    "title": "Healthy Soils and Water for a Sustainable Environment",
+    "opens": "2026-11-19",
+    "closes": "2027-01-28",
+    "award_text": "a share of up to GBP 28 million",
+    "funder": "Farming Futures R&D Fund"
+   },
+   {
+    "title": "ICURe Exploit FY 27/28 - FY29/30",
+    "opens": "2026-11-16",
+    "closes": "2027-01-15",
+    "award_text": "up to GBP 7 million for a three year period",
+    "funder": "Innovate UK"
+   },
+   {
+    "title": "Scaling Interoperable V2X: bidirectional charging",
+    "opens": "2026-11-10",
+    "closes": "2027-01-27",
+    "award_text": "a share of up to GBP 15 million",
+    "funder": ""
+   },
+   {
+    "title": "DRIVE35 Scale-up Fund Drawdown 6",
+    "opens": "2026-11-04",
+    "closes": "2027-01-27",
+    "award_text": "a share of up to GBP 150 million",
+    "funder": ""
+   },
+   {
+    "title": "UK-Netherlands Co-Innovation for Quantum Technology 2026",
+    "opens": "2026-11-03",
+    "closes": "2027-02-09",
+    "award_text": "a share of up to GBP 1.5 million",
+    "funder": ""
+   },
+   {
+    "title": "Investor Partnerships - National Materials Innovation Programme 1",
+    "opens": "2026-11-02",
+    "closes": "2027-01-19",
+    "award_text": "",
+    "funder": ""
+   },
+   {
+    "title": "Underground hydrogen storage demonstrator DEVEX support",
+    "opens": "2026-10-23",
+    "closes": "2027-01-13",
+    "award_text": "a share of up to GBP 1.5 million",
+    "funder": ""
+   },
+   {
+    "title": "Testing and validating underground hydrogen storage components",
+    "opens": "2026-10-23",
+    "closes": "2027-01-27",
+    "award_text": "a share of up to GBP 5 million",
+    "funder": ""
+   },
+   {
+    "title": "Growth Cohorts: Next-gen low carbon concrete cohort entry Round 2",
+    "opens": "2026-10-21",
+    "closes": "2026-12-02",
+    "award_text": "",
+    "funder": ""
+   },
+   {
+    "title": "BridgeAI Deployment Catalyst: AI for Operational Systems",
+    "opens": "2026-10-21",
+    "closes": "2026-12-08",
+    "award_text": "a share of up to GBP 5 million",
+    "funder": "Innovate UK"
+   },
+   {
+    "title": "BridgeAI Deployment Catalyst: AI for Decision Critical Systems",
+    "opens": "2026-10-21",
+    "closes": "2026-12-08",
+    "award_text": "a share of up to GBP 5 million",
+    "funder": "Innovate UK"
+   },
+   {
+    "title": "BridgeAI Deployment Catalyst: AI for Assurance and Compliance",
+    "opens": "2026-10-21",
+    "closes": "2026-12-08",
+    "award_text": "a share of up to GBP 5 million",
+    "funder": "Innovate UK"
+   },
+   {
+    "title": "Knowledge Transfer Partnership (KTP): 2026 - 2027 Round 4",
+    "opens": "2026-10-19",
+    "closes": "2027-01-27",
+    "award_text": "a share of up to GBP 12.5 million",
+    "funder": ""
+   },
+   {
+    "title": "Full ADOPT Grant: Round 10",
+    "opens": "2026-10-08",
+    "closes": "2026-12-02",
+    "award_text": "a share of up to GBP 5 million",
+    "funder": ""
+   },
+   {
+    "title": "Eureka collaborative R&D: Globalstars Japan 2027",
+    "opens": "2026-10-07",
+    "closes": "2027-01-20",
+    "award_text": "a share of GBP 2 million",
+    "funder": ""
+   },
+   {
+    "title": "Sustainable Medicines Manufacturing Innovation: CR&D Round 2",
+    "opens": "2026-10-05",
+    "closes": "2026-12-02",
+    "award_text": "invest up to GBP 7 million",
+    "funder": "Innovate UK, working with the Department of Health and Social Care"
+   },
+   {
+    "title": "Investor Partnerships - Battery Innovation Programme",
+    "opens": "2026-10-05",
+    "closes": "2026-11-25",
+    "award_text": "",
+    "funder": ""
+   },
+   {
+    "title": "Engineering Biology Investor Partnerships Round 1",
+    "opens": "2026-10-01",
+    "closes": "2026-12-02",
+    "award_text": "a share of up to GBP 8 million",
+    "funder": ""
+   },
+   {
+    "title": "UK-Germany Bilateral Collaborative R&D: Round 5",
+    "opens": "2026-09-28",
+    "closes": "2026-12-01",
+    "award_text": "a share of up to GBP 2.4 million",
+    "funder": ""
+   },
+   {
+    "title": "Commercialising Knowledge Assets Fund (CKAF) Winter",
+    "opens": "2026-09-17",
+    "closes": "2026-12-01",
+    "award_text": "grants from GBP 50,000 up to GBP 250,000",
+    "funder": "Government Office for Technology Transfer"
+   },
+   {
+    "title": "Battery Innovation: Feasibility Studies Rd 3",
+    "opens": "2026-09-11",
+    "closes": "2026-12-02",
+    "award_text": "a share of up to GBP 25 million",
+    "funder": "The Battery Innovation Programme"
+   },
+   {
+    "title": "Battery Innovation: Concept Development Rd 3",
+    "opens": "2026-09-11",
+    "closes": "2026-12-02",
+    "award_text": "a share of up to GBP 25 million",
+    "funder": "The Battery Innovation Programme"
+   },
+   {
+    "title": "UK-Singapore CRD 2026",
+    "opens": "2026-08-24",
+    "closes": "2026-12-16",
+    "award_text": "a share of up to GBP 3 million",
+    "funder": ""
+   }
+  ]
+ },
  "not_yet_read": [
   {
    "name": "French Tech Rise",
