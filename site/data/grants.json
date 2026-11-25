@@ -1,0 +1,637 @@
+{
+ "schema_version": "1.0",
+ "title": "Startup grants in Europe and the UK",
+ "generated": "2026-11-25",
+ "licence_note": "Each entry is written by the site's keeper from the programme's own official page. Reuse the data freely and keep the official_url and date_checked with each entry.",
+ "schema_doc": "https://startup-grants.tool.sovereignweb.site/data/SCHEMA.md",
+ "credits": {
+  "starting_list": {
+   "name": "European Startup Grant Programs (2026 Edition)",
+   "url": "https://humble-lantern-cdb.notion.site/e00ec34ecf5a44699910c36cf9e23c93?v=62ed8ff847c4409da264b1f156c9efd4",
+   "used_for": "The list of programme names and official links only. No descriptions or text were copied."
+  }
+ },
+ "vocabularies": {
+  "stages": {
+   "research": "Researchers or research teams",
+   "pre-seed": "Before or around incorporation",
+   "early-stage": "Early-stage start-ups",
+   "sme": "Established small or medium-sized businesses",
+   "scale-up": "Scale-ups"
+  },
+  "sectors": {
+   "any": "Open to any field",
+   "deep-tech": "Deep tech",
+   "life-sciences": "Life sciences",
+   "green-tech": "Green and clean technology",
+   "environment-climate": "Environment and climate",
+   "digital": "Digital",
+   "defence-security": "Defence and security",
+   "advanced-manufacturing": "Advanced manufacturing",
+   "financial-services": "Financial and professional services"
+  },
+  "countries": {
+   "AT": "Austria",
+   "CH": "Switzerland",
+   "DE": "Germany",
+   "DK": "Denmark",
+   "EU": "EU-wide",
+   "GB": "United Kingdom",
+   "GB-NIR": "Northern Ireland"
+  }
+ },
+ "programmes": [
+  {
+   "id": "innosuisse-start-up-innovation-projects",
+   "name": "Start-up Innovation Projects",
+   "organisation": "Innosuisse, the Swiss Innovation Agency",
+   "countries": [
+    "CH"
+   ],
+   "geography": "national",
+   "kind": "programme",
+   "stages": [
+    "early-stage"
+   ],
+   "sectors": [
+    "any"
+   ],
+   "funding_amount_text": "Not stated as a sum; the page gives a share of costs only.",
+   "funding_rate_text": "Up to 70 per cent of direct project costs; the start-up pays at least 30 per cent.",
+   "how_to_apply": "Apply on the Innosuisse application platform once the stated requirements are met.",
+   "deadline_type": "rolling",
+   "deadline_text": "Projects can be submitted on an ongoing basis; the page asks for submission at least eight weeks before a meeting of the Innovation Council. Meeting dates are not in the text read.",
+   "deadline_dates": [],
+   "eligibility_notes": "Swiss-registered start-up about to enter the market for the first time, no more than five years old (ten in exceptional cases), fewer than 50 full-time equivalent staff. Only the start-up is funded, not research partners. The company needs the means to pay its own share.",
+   "official_url": "https://www.innosuisse.admin.ch/en/start-up-innovation-projects",
+   "further_official_urls": [],
+   "date_checked": "2026-11-25",
+   "notes": "Page lists five thematic subgroups: ICT, energy and environment, engineering, life sciences, social sciences and business management.",
+   "in_starting_list": true
+  },
+  {
+   "id": "go-bio-next",
+   "name": "GO-Bio next",
+   "organisation": "Federal Ministry of Research, Technology and Space (BMFTR), Germany",
+   "countries": [
+    "DE"
+   ],
+   "geography": "national",
+   "kind": "programme",
+   "stages": [
+    "research",
+    "early-stage"
+   ],
+   "sectors": [
+    "life-sciences"
+   ],
+   "funding_amount_text": "Not stated: the page says the amount depends on the project. Each of the two phases lasts up to three years.",
+   "funding_rate_text": "Not stated.",
+   "how_to_apply": "Research teams submit project outlines twice a year.",
+   "deadline_type": "fixed",
+   "deadline_text": "Outline submission dates stated as 15 March and 15 September. Lateral entry to phase 2 stated as open until 1 February 2027.",
+   "deadline_dates": [
+    "2027-02-01"
+   ],
+   "eligibility_notes": "Phase 1 is for research teams at German universities or research institutions who want to found a company. Phase 2 is for small technology companies, normally founded from phase 1, with investor co-financing. Agricultural, food and nutrition research is excluded.",
+   "official_url": "https://www.go-bio.de/gobio/en/go-bio/go-bio-next/go-bio-next.html",
+   "further_official_urls": [],
+   "date_checked": "2026-11-25",
+   "notes": "Administered through Projekttraeger Juelich according to the contact details on the page.",
+   "in_starting_list": true
+  },
+  {
+   "id": "women-tech-eu",
+   "name": "Women TechEU",
+   "organisation": "EU-funded project run by a consortium; granting authority EISMEA",
+   "countries": [
+    "EU"
+   ],
+   "geography": "eu",
+   "kind": "programme",
+   "stages": [
+    "early-stage"
+   ],
+   "sectors": [
+    "deep-tech"
+   ],
+   "funding_amount_text": "EUR 75,000 per beneficiary, non-dilutive, as stated.",
+   "funding_rate_text": "Not stated.",
+   "how_to_apply": "Start with the phase 1 eligibility check, reached from the active calls page.",
+   "deadline_type": "fixed",
+   "deadline_text": "The page gives a full proposal deadline of 16 September 2026 and also describes a continuous open call with four cut-off dates that it does not list. Check the active calls page before relying on any date.",
+   "deadline_dates": [
+    "2026-09-16"
+   ],
+   "eligibility_notes": "Early-stage deep tech start-up founded or co-founded by a woman in a top management role, women holding at least 25 per cent of shares, registered for between six months and five years, technology readiness level 4 to 6, less than EUR 1 million equity raised. Not open to foundations or non-profits.",
+   "official_url": "https://womentecheurope.eu/",
+   "further_official_urls": [],
+   "date_checked": "2026-11-25",
+   "notes": "Programme budget stated as EUR 12 million in grants over 2026 to 2028.",
+   "in_starting_list": true
+  },
+  {
+   "id": "eic-pathfinder",
+   "name": "EIC Pathfinder",
+   "organisation": "European Innovation Council, European Commission",
+   "countries": [
+    "EU"
+   ],
+   "geography": "eu",
+   "kind": "programme",
+   "stages": [
+    "research"
+   ],
+   "sectors": [
+    "deep-tech"
+   ],
+   "funding_amount_text": "Grants of up to EUR 4 million, or more if justified; booster grants of up to EUR 50,000.",
+   "funding_rate_text": "Not stated.",
+   "how_to_apply": "Submit through the EU Funding and Tenders Portal before the deadline.",
+   "deadline_type": "fixed",
+   "deadline_text": "Pathfinder Open stage 1: 25 February 2027; stage 2: 16 September 2027. Pathfinder Challenges: 29 September 2027.",
+   "deadline_dates": [
+    "2027-02-25",
+    "2027-09-16",
+    "2027-09-29"
+   ],
+   "eligibility_notes": "Aimed at research teams at the earliest stages (technology readiness level 1 to 4), not companies. Needs a consortium of at least three independent legal entities in different countries; single applicants only for Challenges.",
+   "official_url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en",
+   "further_official_urls": [],
+   "date_checked": "2026-11-25",
+   "notes": "Page states 2027 budgets of EUR 82 million (Challenges) and EUR 166 million (Open).",
+   "in_starting_list": true
+  },
+  {
+   "id": "eic-accelerator",
+   "name": "EIC Accelerator",
+   "organisation": "European Innovation Council, European Commission",
+   "countries": [
+    "EU"
+   ],
+   "geography": "eu",
+   "kind": "programme",
+   "stages": [
+    "early-stage",
+    "scale-up"
+   ],
+   "sectors": [
+    "any"
+   ],
+   "funding_amount_text": "Grant component up to EUR 2.5 million; investment component EUR 1 million to EUR 10 million. Higher sums are described under STEP Scale Up.",
+   "funding_rate_text": "Not stated.",
+   "how_to_apply": "Submit a short proposal at any time; successful applicants then write a full proposal for a batch date, through the Funding and Tenders Portal.",
+   "deadline_type": "fixed",
+   "deadline_text": "Short proposals can be submitted at any time. Full proposal batch dates: 20 January 2027, 17 March 2027, 1 September 2027, 4 November 2027.",
+   "deadline_dates": [
+    "2027-01-20",
+    "2027-03-17",
+    "2027-09-01",
+    "2027-11-04"
+   ],
+   "eligibility_notes": "Start-ups and SMEs in an EU Member State or Horizon Europe associated country. Small mid-caps (up to 499 staff) may apply for investment only. Technology readiness level 6 to 8 for grants, 6 to 9 for investment. The final step is an interview with an EIC jury.",
+   "official_url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
+   "further_official_urls": [],
+   "date_checked": "2026-11-25",
+   "notes": "The page says both 3 steps and 4 steps for the process.",
+   "in_starting_list": true
+  },
+  {
+   "id": "eic-transition",
+   "name": "EIC Transition",
+   "organisation": "European Innovation Council, European Commission",
+   "countries": [
+    "EU"
+   ],
+   "geography": "eu",
+   "kind": "programme",
+   "stages": [
+    "research",
+    "early-stage"
+   ],
+   "sectors": [
+    "any"
+   ],
+   "funding_amount_text": "Grants of up to EUR 2.5 million; booster grants of up to EUR 50,000.",
+   "funding_rate_text": "Not stated.",
+   "how_to_apply": "Submit through the Funding and Tenders Portal before the deadline, in three steps: proposal, expert evaluation, jury interview.",
+   "deadline_type": "fixed",
+   "deadline_text": "Proposal deadline stated as 14 September 2027, 17:00 Brussels time. A letter of intent date of 20 October 2026 is also mentioned.",
+   "deadline_dates": [
+    "2027-09-14"
+   ],
+   "eligibility_notes": "SMEs, start-ups, spin-offs and research organisations. The proposal must build on results of an eligible earlier project (for example EIC Pathfinder or ERC Proof of Concept). Starts at technology readiness level 4, aiming for 5 or preferably 6.",
+   "official_url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-transition_en",
+   "further_official_urls": [],
+   "date_checked": "2026-11-25",
+   "notes": "The page says the 2026 list of eligible projects applies and a 2027 list is being prepared.",
+   "in_starting_list": true
+  },
+  {
+   "id": "aws-preseed-innovative-solutions",
+   "name": "aws Preseed: Innovative Solutions",
+   "organisation": "aws (Austria Wirtschaftsservice)",
+   "countries": [
+    "AT"
+   ],
+   "geography": "national",
+   "kind": "programme",
+   "stages": [
+    "pre-seed",
+    "early-stage"
+   ],
+   "sectors": [
+    "any"
+   ],
+   "funding_amount_text": "Maximum grant EUR 100,000 with the gender bonus, otherwise EUR 89,000. Non-repayable.",
+   "funding_rate_text": "80 per cent of eligible costs, raised to 90 per cent with the gender bonus; 10 per cent equity from shareholders.",
+   "how_to_apply": "Apply online through the aws funding manager.",
+   "deadline_type": "rolling",
+   "deadline_text": "Stated as ongoing, with several decision dates a year (usually quarterly).",
+   "deadline_dates": [],
+   "eligibility_notes": "Project located in Austria. Teams before incorporation, or companies up to six months after entry in the commercial register; micro and small enterprises if established. Not for deep tech (that has its own aws line). Social or ecological value at the core.",
+   "official_url": "https://www.aws.at/en/aws-preseed-innovative-solutions/",
+   "further_official_urls": [
+    "https://www.aws.at/en/aws-preseed-seedfinancing/"
+   ],
+   "date_checked": "2026-11-25",
+   "notes": "Found through the hub page https://www.aws.at/en/aws-preseed-seedfinancing/, which lists the other aws lines (deep tech, seed financing) that this entry does not cover.",
+   "in_starting_list": true
+  },
+  {
+   "id": "erc-starting-grant",
+   "name": "ERC Starting Grant",
+   "organisation": "European Research Council",
+   "countries": [
+    "EU"
+   ],
+   "geography": "eu",
+   "kind": "programme",
+   "stages": [
+    "research"
+   ],
+   "sectors": [
+    "any"
+   ],
+   "funding_amount_text": "Up to EUR 1.5 million over 5 years; a further EUR 1 million can be requested with justification; up to EUR 2 million for researchers relocating from outside associated countries.",
+   "funding_rate_text": "Up to 100 per cent of eligible direct costs plus 25 per cent for indirect costs.",
+   "how_to_apply": "A principal investigator submits through a host institution in response to the annual call, via the Funding and Tenders Portal.",
+   "deadline_type": "annual",
+   "deadline_text": "Annual calls; the closing date is set in each call and is not in the page text.",
+   "deadline_dates": [],
+   "eligibility_notes": "Individual researchers with 0 to 10 years since their PhD, hosted by an institution in an EU Member State or associated country. Any field of research. This is a research grant for people, not a company programme.",
+   "official_url": "https://erc.europa.eu/apply-grant/starting-grant",
+   "further_official_urls": [],
+   "date_checked": "2026-11-25",
+   "notes": "Included because it is in the starting list; it suits researchers, not start-ups directly.",
+   "in_starting_list": true
+  },
+  {
+   "id": "innobooster",
+   "name": "Innobooster",
+   "organisation": "Innovation Fund Denmark",
+   "countries": [
+    "DK"
+   ],
+   "geography": "national",
+   "kind": "programme",
+   "stages": [
+    "early-stage",
+    "sme"
+   ],
+   "sectors": [
+    "green-tech",
+    "life-sciences",
+    "digital",
+    "defence-security"
+   ],
+   "funding_amount_text": "Between DKK 200,000 and DKK 5 million.",
+   "funding_rate_text": "Co-financing of up to 35 per cent of project costs; projects last up to two years.",
+   "how_to_apply": "Apply through the e-grant system under the relevant call.",
+   "deadline_type": "windows",
+   "deadline_text": "Applications are processed in batches. Windows listed: 27 May to 6 August 2026 and 20 August to 15 October 2026. The page says there are currently no calls available.",
+   "deadline_dates": [],
+   "eligibility_notes": "SME (EU definition) registered in Denmark with a CVR number, with a financial foundation (at least 100,000 in risk capital or development grants in the past three years, or gross profit of at least DKK 250,000 in one of the past three published years). High-risk, challenge-driven development within the listed themes.",
+   "official_url": "https://danmarksinnovationsfond.dk/en/programmes/innobooster/",
+   "further_official_urls": [
+    "https://innovationsfonden.dk/en/p/innobooster"
+   ],
+   "date_checked": "2026-11-25",
+   "notes": "The starting list's address, innovationsfonden.dk/en/p/innobooster, redirected here. The page lists four themes in one place and three in another (defence is missing from the second).",
+   "in_starting_list": true
+  },
+  {
+   "id": "life-close-to-market",
+   "name": "LIFE close-to-market projects",
+   "organisation": "CINEA, European Commission (LIFE Programme)",
+   "countries": [
+    "EU"
+   ],
+   "geography": "eu",
+   "kind": "programme",
+   "stages": [
+    "scale-up",
+    "sme"
+   ],
+   "sectors": [
+    "green-tech",
+    "environment-climate"
+   ],
+   "funding_amount_text": "Not stated.",
+   "funding_rate_text": "Not stated.",
+   "how_to_apply": "Respond to the annual LIFE call for proposals under the relevant thematic area.",
+   "deadline_type": "annual",
+   "deadline_text": "Calls are published every year; the deadline is not stated on the pages read.",
+   "deadline_dates": [],
+   "eligibility_notes": "Public authorities, NGOs, universities and institutes as well as companies bringing green products, technologies or services to market. Needs a high level of technical and business readiness and a business plan.",
+   "official_url": "https://cinea.ec.europa.eu/life/life-close-market-projects_en",
+   "further_official_urls": [
+    "https://cinea.ec.europa.eu/programmes/life_en"
+   ],
+   "date_checked": "2026-11-25",
+   "notes": "Found through the hub page https://cinea.ec.europa.eu/programmes/life_en, which also links the current calls page.",
+   "in_starting_list": true
+  },
+  {
+   "id": "sprind-your-project",
+   "name": "SPRIND: Your Project Proposal",
+   "organisation": "SPRIND (Federal Agency for Breakthrough Innovation), Germany",
+   "countries": [
+    "DE"
+   ],
+   "geography": "national",
+   "kind": "route",
+   "stages": [
+    "research"
+   ],
+   "sectors": [
+    "any"
+   ],
+   "funding_amount_text": "Not stated. The page says there are no funding guidelines and financing is set case by case.",
+   "funding_rate_text": "Not stated.",
+   "how_to_apply": "Describe the project idea through the submission form on the site. The page says this is not a formal application.",
+   "deadline_type": "not-stated",
+   "deadline_text": "No closing date is stated; the page says every submission is considered.",
+   "deadline_dates": [],
+   "eligibility_notes": "People with expert or scientific knowledge and a breakthrough idea, civilian or dual-use. The page says fewer than ten per cent of ideas are pursued.",
+   "official_url": "https://www.sprind.org/en/actions/your-project",
+   "further_official_urls": [],
+   "date_checked": "2026-11-25",
+   "notes": "A route for submitting ideas rather than a grant programme with set terms.",
+   "in_starting_list": true
+  },
+  {
+   "id": "innovate-uk-ktp",
+   "name": "Knowledge Transfer Partnerships",
+   "organisation": "Innovate UK, part of UK Research and Innovation",
+   "countries": [
+    "GB"
+   ],
+   "geography": "national",
+   "kind": "programme",
+   "stages": [
+    "sme",
+    "scale-up"
+   ],
+   "sectors": [
+    "any"
+   ],
+   "funding_amount_text": "A typical project is described as a package of support worth around GBP 80,000 to GBP 100,000 a year.",
+   "funding_rate_text": "The business pays a share of costs: typically 67 per cent of project costs for SMEs and 50 per cent for larger businesses, as stated; grant covers the rest.",
+   "how_to_apply": "Apply through the Innovation Funding Service competitions.",
+   "deadline_type": "fixed",
+   "deadline_text": "Round four of 2026 to 2027 closes 20 January 2027; 2027 to 2028 round one closes 21 April 2027 and round two 23 June 2027. The page says dates may change and the programme runs throughout the year.",
+   "deadline_dates": [
+    "2027-01-20",
+    "2027-04-21",
+    "2027-06-23"
+   ],
+   "eligibility_notes": "A business working with a university, college, research organisation or Catapult. Full eligibility is on a separate page that was not read.",
+   "official_url": "https://www.ukri.org/councils/innovate-uk/guidance-for-applicants/guidance-for-specific-funds/knowledge-transfer-partnership-guidance/",
+   "further_official_urls": [
+    "https://www.ukri.org/councils/innovate-uk/guidance-for-applicants/guidance-for-specific-funds/knowledge-transfer-partnership-guidance/dates-and-deadlines-for-ktp-applicants/",
+    "https://www.investni.com/support-for-business/innovation-support/innovate-uk-knowledge-transfer-partnerships"
+   ],
+   "date_checked": "2026-11-25",
+   "notes": "In Northern Ireland the scheme is run with Invest NI.",
+   "in_starting_list": false
+  },
+  {
+   "id": "seis",
+   "name": "Seed Enterprise Investment Scheme (SEIS)",
+   "organisation": "HM Revenue and Customs",
+   "countries": [
+    "GB"
+   ],
+   "geography": "national",
+   "kind": "tax-relief",
+   "stages": [
+    "pre-seed",
+    "early-stage"
+   ],
+   "sectors": [
+    "any"
+   ],
+   "funding_amount_text": "A company can receive a maximum of GBP 250,000 through SEIS.",
+   "funding_rate_text": "Investor tax relief rate not stated on the page read.",
+   "how_to_apply": "Issue the shares, then send HMRC a compliance statement (form SEIS1) through the page's start link.",
+   "deadline_type": "rolling",
+   "deadline_text": "No closing date stated. Money raised must be spent within three years of the share issue.",
+   "deadline_dates": [],
+   "eligibility_notes": "A tax relief for individual investors, not a grant. Company with a new qualifying trade, established in the UK, gross assets not over GBP 350,000 and fewer than 25 full-time equivalent staff. Not available if the company has had EIS or VCT investment.",
+   "official_url": "https://www.gov.uk/guidance/seed-enterprise-investment-scheme",
+   "further_official_urls": [],
+   "date_checked": "2026-11-25",
+   "notes": "Page last updated 25 May 2023, according to the page.",
+   "in_starting_list": false
+  },
+  {
+   "id": "eis",
+   "name": "Enterprise Investment Scheme (EIS)",
+   "organisation": "HM Revenue and Customs",
+   "countries": [
+    "GB"
+   ],
+   "geography": "national",
+   "kind": "tax-relief",
+   "stages": [
+    "early-stage",
+    "sme",
+    "scale-up"
+   ],
+   "sectors": [
+    "any"
+   ],
+   "funding_amount_text": "Most companies can raise up to GBP 10 million in any 12 months and up to GBP 24 million in their lifetime from these sources.",
+   "funding_rate_text": "Investor tax relief rate not stated on the page read.",
+   "how_to_apply": "Issue the shares, then send HMRC a compliance statement (form EIS1) through the page's start link, after four months of qualifying activity and within two years.",
+   "deadline_type": "rolling",
+   "deadline_text": "No fixed closing date stated.",
+   "deadline_dates": [],
+   "eligibility_notes": "A tax relief for individual investors, not a grant. Fewer than 250 full-time equivalent staff, gross assets up to GBP 30 million before and GBP 35 million after the shares are issued, usually within seven years of first commercial sale. Knowledge-intensive companies have different limits.",
+   "official_url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-for-the-enterprise-investment-scheme",
+   "further_official_urls": [],
+   "date_checked": "2026-11-25",
+   "notes": "Page last updated 6 April 2026, according to the page.",
+   "in_starting_list": false
+  },
+  {
+   "id": "invest-ni-support-for-start-ups",
+   "name": "Support for start-ups (Invest NI)",
+   "organisation": "Invest Northern Ireland",
+   "countries": [
+    "GB-NIR"
+   ],
+   "geography": "regional",
+   "kind": "programme",
+   "stages": [
+    "early-stage"
+   ],
+   "sectors": [
+    "advanced-manufacturing",
+    "digital",
+    "life-sciences",
+    "financial-services",
+    "green-tech"
+   ],
+   "funding_amount_text": "Groundwork for Growth: up to GBP 15,000. Innovation Vouchers: up to GBP 10,000 (from a linked card, not its own page). Ambition to Grow (Supporting Women): up to GBP 30,000 (from the Invest NI home page).",
+   "funding_rate_text": "Not stated.",
+   "how_to_apply": "Call the Business Support Team or use the enquiry form on the page.",
+   "deadline_type": "fixed",
+   "deadline_text": "Only Ambition to Grow gives a date: closes 12:00 on Friday 11 December 2026. Others not stated.",
+   "deadline_dates": [
+    "2026-12-11"
+   ],
+   "eligibility_notes": "New or early-stage businesses developing innovative products or tradeable services for customers outside Northern Ireland, with the ambition to grow quickly.",
+   "official_url": "https://www.investni.com/support-for-business/support-for-start-ups",
+   "further_official_urls": [
+    "https://www.investni.com/"
+   ],
+   "date_checked": "2026-11-25",
+   "notes": "Sector list is the page's list of priority sectors.",
+   "in_starting_list": false
+  }
+ ],
+ "not_yet_read": [
+  {
+   "name": "French Tech Rise",
+   "country": "FR",
+   "starting_list_url": "https://lafrenchtech.gouv.fr/en/programme/french-tech-rise-2/",
+   "reason": "The address in the starting list returned 404 Not Found when read on 25 November 2026."
+  },
+  {
+   "name": "Horizon Europe (clusters)",
+   "country": "EU",
+   "starting_list_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/programmes/horizon",
+   "reason": "The portal page returned only its title, with no programme text."
+  },
+  {
+   "name": "ZIM",
+   "country": "DE",
+   "starting_list_url": "https://www.zim.de/ZIM/Navigation/DE/Meta/Englisch/englisch.html",
+   "reason": "The site showed a browser-verification page to the reader and gave no programme text."
+  },
+  {
+   "name": "VLAIO research project",
+   "country": "BE",
+   "starting_list_url": "https://www.vlaio.be/en/subsidies/research-project",
+   "reason": "The site refused the request (403)."
+  },
+  {
+   "name": "Innovasjon Norge start-up support",
+   "country": "NO",
+   "starting_list_url": "https://en.innovasjonnorge.no/article/startups",
+   "reason": "The address redirected to a general home page, not the article."
+  },
+  {
+   "name": "EXIST Forschungstransfer",
+   "country": "DE",
+   "starting_list_url": "https://exist.de/programm/exist-forschungstransfer/foerderantrag-stellen/",
+   "reason": "The address in the starting list returned 404 Not Found."
+  },
+  {
+   "name": "EXIST Gruendungsstipendium",
+   "country": "DE",
+   "starting_list_url": "https://exist.de/en/programm/exist-gruendungsstipendium/",
+   "reason": "The address in the starting list returned 404 Not Found."
+  },
+  {
+   "name": "CDTI Neotec",
+   "country": "ES",
+   "starting_list_url": "https://www.cdti.es/en/ayudas/neotec",
+   "reason": "The page returned no content to the reader."
+  },
+  {
+   "name": "Eurostars",
+   "country": "EU",
+   "starting_list_url": "https://www.eurekanetwork.org/programmes/eurostars/",
+   "reason": "The site refused the request (403)."
+  },
+  {
+   "name": "Bpifrance i-Nov",
+   "country": "FR",
+   "starting_list_url": "https://www.bpifrance.fr/nos-appels-a-projets-concours/appel-a-projets-concours-dinnovation-i-nov",
+   "reason": "The site refused the request (403)."
+  },
+  {
+   "name": "i-Lab innovation contest",
+   "country": "FR",
+   "starting_list_url": "",
+   "reason": "The starting list links a news article, not an official page, and no official page has been found yet."
+  },
+  {
+   "name": "FFG general programme",
+   "country": "AT",
+   "starting_list_url": "https://www.ffg.at/en/programme/general-programme",
+   "reason": "The site refused the request (403)."
+  },
+  {
+   "name": "Vinnova funding",
+   "country": "SE",
+   "starting_list_url": "https://www.vinnova.se/en/apply-for-funding/",
+   "reason": "This is a hub of many calls, not one programme; individual calls are not yet read."
+  },
+  {
+   "name": "EIT opportunities",
+   "country": "EU",
+   "starting_list_url": "https://www.eit.europa.eu/our-activities/opportunities",
+   "reason": "This is a hub of current calls; individual calls are not yet read."
+  },
+  {
+   "name": "ESA BIC Booster funding opportunities",
+   "country": "DE",
+   "starting_list_url": "https://booster.esa-bic.de/funding-opportunities/",
+   "reason": "This is a hub; the page states no amounts or deadlines and sends applicants to their ESA BIC."
+  },
+  {
+   "name": "EU cascade funding (FSTP)",
+   "country": "EU",
+   "starting_list_url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/spaces/IT/pages/25559615/Cascade+Funding+Calls+Financial+Support+for+Third+Parties+FSTP",
+   "reason": "A how-to guide for the portal, not a programme."
+  },
+  {
+   "name": "UKRI apply for funding",
+   "country": "GB",
+   "starting_list_url": "https://www.ukri.org/apply-for-funding/",
+   "reason": "A hub for all UKRI funding, not one programme."
+  },
+  {
+   "name": "Start Up Loans",
+   "country": "GB",
+   "starting_list_url": "https://www.startuploans.co.uk/",
+   "reason": "The site refused the request (403)."
+  },
+  {
+   "name": "Wales start-up funding",
+   "country": "GB-WLS",
+   "starting_list_url": "",
+   "reason": "The host for the Development Bank of Wales could not be reached from the builder's network; Business Wales not yet tried."
+  },
+  {
+   "name": "Scottish Enterprise grants",
+   "country": "GB-SCT",
+   "starting_list_url": "https://www.scottish-enterprise.com/how-we-can-help/funding-and-grants/business-grants-and-funding-calls",
+   "reason": "An index of grants and calls with no start-up programme stated; the research and development grants page is not yet read."
+  }
+ ]
+}

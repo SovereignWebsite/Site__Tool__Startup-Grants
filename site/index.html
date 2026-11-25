@@ -61,6 +61,21 @@ h2{font-size:1.25rem;margin:2rem 0 .5rem}ol,ul.plain{color:var(--muted);padding-
 pre{background:rgba(127,127,127,.1);padding:.8rem 1rem;border-radius:6px;white-space:pre-wrap;font-size:.9rem;color:var(--fg)}
 code{font-size:.9em}main a,main code{overflow-wrap:anywhere}
 @media (max-width:599px){footer,.family-credit,.family,.site-links{font-size:15px}}
+
+.tool{max-width:70rem}main.wide{max-width:70rem}
+.filters{display:flex;flex-wrap:wrap;gap:.75rem 1rem;margin:1.2rem 0;align-items:end}
+.filters label{display:flex;flex-direction:column;font-size:.85rem;color:var(--muted);gap:.2rem}
+.filters select,.filters input{font:inherit;font-size:1rem;padding:.45rem .6rem;border:1px solid var(--muted);border-radius:6px;background:var(--bg);color:var(--fg);min-width:11rem}
+.filters button{font:inherit;padding:.45rem .9rem;border:1px solid var(--accent);background:transparent;color:var(--accent);border-radius:6px;cursor:pointer;min-height:44px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.count{color:var(--muted);margin:.5rem 0}
+.cards{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));gap:1rem}
+.card{border:1px solid var(--line);border-radius:8px;padding:1rem}
+.card h2{font-size:1.1rem;margin:0 0 .2rem}.card .org{color:var(--muted);font-size:.9rem;margin:0 0 .6rem}
+.tags{display:flex;flex-wrap:wrap;gap:.3rem;margin:.4rem 0}.tags span{font-size:.75rem;border:1px solid var(--line);border-radius:99px;padding:.05rem .5rem;color:var(--muted)}
+.card dl{margin:.5rem 0;font-size:.92rem}.card dt{font-weight:600;color:var(--fg);margin-top:.4rem}.card dd{margin:0;color:var(--muted)}
+.empty{font-style:italic}
+.gaps{margin-top:2.5rem}.gaps li{color:var(--muted)}
 </style>
 </head>
 <body>
@@ -89,11 +104,56 @@ code{font-size:.9em}main a,main code{overflow-wrap:anywhere}
     <a href="/agents/">Use with your AI</a>
   </nav>
 </header>
-<main id="main">
+<main id="main" class="wide">
 <div class="mark">startup-grants.tool.sovereignweb.site</div>
 <h1>Startup grants in Europe and the UK</h1>
-<p>Public startup grants and funding programmes in Europe and the UK, by country, stage and sector, each from its official page with the date checked.</p>
-<p>This site was made by one request to the Sovereign Website pipeline. Its files, its history and its address are in a repository its owner controls, and can move anywhere.</p>
+<p>Public startup grants and funding programmes, each written from the programme's own official page, with that link and the date checked. Where an official page does not state something, we leave it blank. Deadlines change, so always check the official page before you act.</p>
+<form class="filters" role="search" aria-label="Filter programmes" onsubmit="return false">
+ <label>Country or region<select id="f-country"><option value="">All</option></select></label>
+ <label>Stage<select id="f-stage"><option value="">All</option></select></label>
+ <label>Sector<select id="f-sector"><option value="">All</option></select></label>
+ <label>Search<input id="f-q" type="search" autocomplete="off"></label>
+ <button type="button" id="f-reset">Clear filters</button>
+</form>
+<p class="count" id="count" role="status" aria-live="polite">Loading programmes</p>
+<ul class="cards" id="cards"></ul>
+<noscript><p>The filters need JavaScript. The full data is in <a href="/data/grants.json">grants.json</a>.</p></noscript>
+<section class="gaps" aria-labelledby="gaps-h"><h2 id="gaps-h">Not yet written up</h2>
+<p>These items from the starting list are not yet in the tool, with the reason for each.</p><ul id="gaps"></ul></section>
+<h2>About the data</h2>
+<p>The starting list of programme names and official links came from the public Notion database <a href="https://humble-lantern-cdb.notion.site/e00ec34ecf5a44699910c36cf9e23c93?v=62ed8ff847c4409da264b1f156c9efd4">European Startup Grant Programs (2026 Edition)</a>. None of its descriptions or text was copied. Every entry was written from the official page it links to. The data is open for reuse as <a href="/data/grants.json">grants.json</a>, described in <a href="/data/SCHEMA.md">the schema</a>.</p>
+<script>
+(function(){
+ var $=function(i){return document.getElementById(i)};var data=null;
+ function opt(sel,map,used){Object.keys(map).filter(function(k){return used.has(k)}).forEach(function(k){var o=document.createElement('option');o.value=k;o.textContent=map[k];sel.appendChild(o)})}
+ function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+ function row(dl,k,v){dl.appendChild(el('dt',null,k));var d=el('dd',v?null:'empty',v||'Not stated on the official page');dl.appendChild(d)}
+ function render(){
+  var c=$('f-country').value,s=$('f-stage').value,sec=$('f-sector').value,q=$('f-q').value.toLowerCase();
+  var list=data.programmes.filter(function(p){
+   if(c&&p.countries.indexOf(c)<0&&!(p.countries.indexOf('EU')>=0&&c==='EU'))return false;
+   if(s&&p.stages.indexOf(s)<0)return false;
+   if(sec&&p.sectors.indexOf(sec)<0&&p.sectors.indexOf('any')<0)return false;
+   if(q&&(p.name+' '+p.organisation+' '+p.eligibility_notes).toLowerCase().indexOf(q)<0)return false;return true});
+  var ul=$('cards');ul.textContent='';
+  list.forEach(function(p){var li=el('li','card');var h=el('h2');var a=el('a',null,p.name);a.href=p.official_url;h.appendChild(a);li.appendChild(h);
+   li.appendChild(el('p','org',p.organisation));
+   var tags=el('div','tags');p.countries.forEach(function(x){tags.appendChild(el('span',null,data.vocabularies.countries[x]||x))});
+   if(p.kind!=='programme')tags.appendChild(el('span',null,p.kind==='tax-relief'?'Investor tax relief':'Submission route'));
+   p.stages.forEach(function(x){tags.appendChild(el('span',null,data.vocabularies.stages[x]||x))});li.appendChild(tags);
+   var dl=el('dl');row(dl,'Funding',p.funding_amount_text);row(dl,'Share of costs',p.funding_rate_text);row(dl,'How to apply',p.how_to_apply);row(dl,'Deadline',p.deadline_text);row(dl,'Eligibility',p.eligibility_notes);
+   if(p.notes)row(dl,'Note',p.notes);li.appendChild(dl);
+   li.appendChild(el('p','org','Checked '+p.date_checked+' on the official page.'));ul.appendChild(li)});
+  $('count').textContent=list.length+' of '+data.programmes.length+' programmes shown'}
+ fetch('/data/grants.json').then(function(r){return r.json()}).then(function(d){data=d;
+  var cs=new Set(),st=new Set(),se=new Set();d.programmes.forEach(function(p){p.countries.forEach(function(x){cs.add(x)});p.stages.forEach(function(x){st.add(x)});p.sectors.forEach(function(x){se.add(x)})});
+  opt($('f-country'),d.vocabularies.countries,cs);opt($('f-stage'),d.vocabularies.stages,st);opt($('f-sector'),d.vocabularies.sectors,se);
+  d.not_yet_read.forEach(function(g){var li=el('li',null,g.name+': '+g.reason);$('gaps').appendChild(li)});
+  ['f-country','f-stage','f-sector'].forEach(function(i){$(i).addEventListener('change',render)});$('f-q').addEventListener('input',render);
+  $('f-reset').addEventListener('click',function(){['f-country','f-stage','f-sector','f-q'].forEach(function(i){$(i).value=''});render()});render()
+ }).catch(function(){$('count').textContent='The data could not be loaded. See grants.json.'});
+})();
+</script>
 <footer>
 <nav class="site-links" aria-label="About this site">
   <a href="/start/">Start here</a>
