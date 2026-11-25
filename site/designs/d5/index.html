@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design 5: Deadline timeline</title>
+<meta name="description" content="Programmes grouped by when the page says something closes, with the open-all-year ones apart. Answers the question: what is closing soon?">
+<meta name="robots" content="noindex">
+<style>:root{--bg:#fcfcfa;--fg:#1a1c1e;--muted:#565c63;--accent:#b4410b;--line:#e2e4e0;--r:6px;--w:56rem;--font:17px/1.6 system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#141516;--fg:#ececea;--muted:#a6aaae;--accent:#f09a68;--line:#2b2d2f}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:var(--font)}
+a{color:var(--accent)}.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--bg);padding:.5rem}
+.top{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center;max-width:var(--w);margin:0 auto;padding:1.2rem 1rem}.top .name{font-weight:700;color:var(--fg);text-decoration:none}.top nav{margin-left:auto}
+main{max-width:var(--w);margin:0 auto;padding:0 1rem 4rem}h1{margin:.3rem 0 .6rem}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.filters{display:flex;flex-wrap:wrap;gap:.7rem 1rem;align-items:end;margin:1rem 0}.filters label{display:flex;flex-direction:column;font-size:.85rem;color:var(--muted);gap:.2rem}
+.filters select,.filters input{font:inherit;padding:.45rem .6rem;border:1px solid var(--muted);border-radius:var(--r);background:var(--bg);color:var(--fg);min-width:11rem;min-height:44px}
+.filters button{font:inherit;min-height:44px;padding:.4rem .9rem;border:1px solid var(--accent);background:transparent;color:var(--accent);border-radius:var(--r);cursor:pointer}
+.count{color:var(--muted)}.empty{font-style:italic;color:var(--muted)}.muted{color:var(--muted)}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
+.grp h2{font-size:1.15rem;border-bottom:2px solid var(--accent);padding-bottom:.2rem;margin:2rem 0 .8rem}.ev{display:grid;grid-template-columns:7.5rem 1fr;gap:.2rem 1rem;padding:.6rem 0;border-bottom:1px solid var(--line)}@media (max-width:36rem){.ev{grid-template-columns:1fr}}.ev time{font-weight:700;color:var(--accent)}.ev h3{margin:0;font-size:1rem}.ev p{margin:.15rem 0;color:var(--muted);font-size:.92rem}</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><a class="name" href="/">Startup grants in Europe and the UK</a><nav aria-label="Designs"><a href="/designs/">All five designs</a></nav></header>
+<main id="main">
+<h1>Design 5: Deadline timeline</h1>
+<p class="muted">Programmes grouped by when the page says something closes, with the open-all-year ones apart. Answers the question: what is closing soon? This is a design direction, not the live page.</p>
+<form class="filters" role="search" aria-label="Filter programmes" onsubmit="return false">
+ <label>Country or region<select id="f-country"><option value="">All</option></select></label>
+ <label>Stage<select id="f-stage"><option value="">All</option></select></label>
+ <label>Sector<select id="f-sector"><option value="">All</option></select></label>
+ <label>Search<input id="f-q" type="search" autocomplete="off"></label>
+ <button type="button" id="f-reset">Clear filters</button></form>
+<p class="count" id="count" role="status" aria-live="polite">Loading programmes</p>
+<div id="out"></div>
+<h2>Not yet written up</h2><ul id="gaps" class="muted"></ul>
+<footer>Data: <a href="/data/grants.json">grants.json</a>. Each entry is from the programme's official page, with the date checked. Starting list: the public Notion database European Startup Grant Programs (2026 Edition), names and links only.</footer>
+</main>
+<script src="/designs/common.js"></script>
+<script>G.start(function(list){var o=G.$('out');o.textContent='';var today='2026-11-25',up=[],other=[];
+ list.forEach(function(p){var ds=(p.deadline_dates||[]).slice().sort();if(ds.length){ds.forEach(function(x){up.push({d:x,p:p})})}else other.push(p)});
+ up.sort(function(a,b){return a.d<b.d?-1:1});
+ var mo={};up.forEach(function(e){var k=e.d.slice(0,7);(mo[k]=mo[k]||[]).push(e)});
+ var M=['January','February','March','April','May','June','July','August','September','October','November','December'];
+ Object.keys(mo).sort().forEach(function(k){var g=G.el('section','grp'),h=G.el('h2',null,M[+k.slice(5)-1]+' '+k.slice(0,4));g.appendChild(h);
+  mo[k].forEach(function(e){var r=G.el('div','ev'),t=G.el('time',null,e.d<today?e.d+' (passed)':e.d);t.setAttribute('datetime',e.d);r.appendChild(t);var b=G.el('div'),hh=G.el('h3'),a=G.el('a',null,e.p.name);a.href=e.p.official_url;hh.appendChild(a);b.appendChild(hh);b.appendChild(G.el('p',null,e.p.organisation));b.appendChild(G.el('p',null,e.p.deadline_text));r.appendChild(b);g.appendChild(r)});o.appendChild(g)});
+ var g=G.el('section','grp');g.appendChild(G.el('h2',null,'No fixed date on the official page'));
+ other.forEach(function(p){var r=G.el('div','ev'),t=G.el('span','muted',p.deadline_type==='rolling'?'Ongoing':p.deadline_type==='annual'?'Annual call':p.deadline_type==='windows'?'Windows':'Not stated');r.appendChild(t);var b=G.el('div'),hh=G.el('h3'),a=G.el('a',null,p.name);a.href=p.official_url;hh.appendChild(a);b.appendChild(hh);b.appendChild(G.el('p',null,p.deadline_text||'Not stated on the official page'));r.appendChild(b);g.appendChild(r)});o.appendChild(g)});</script>
+</body></html>
