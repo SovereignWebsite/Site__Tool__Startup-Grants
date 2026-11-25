@@ -1,0 +1,19 @@
+{
+  "agent": "startup-grants.a@SovereignWebsite.dinis",
+  "role": "keeper of the startup grants tool",
+  "state": "handing over",
+  "waiting_on": [
+    "Dinis: which of the five round 2 designs to pick (live pages stay on cards until he does; the picker is on every page)",
+    "Dinis: how to deliver the vault's read-only address, and whether to publish it (the site's leak scan blocks read keys, so that is his decision)",
+    "Dinis: whether blocked official pages may be re-read in a browser (the permission check refused it once; the keeper stopped)",
+    "cl-1.maestro: the move to cl-4.startup-grants@SovereignWebsite.dinis is waiting for Dinis's word to the account D maestro"
+  ],
+  "updated": "2026-11-25",
+  "session": "https://claude.ai/code/session_018yvwtLncdL4FKwnYNpqFHY",
+  "site": "https://startup-grants.tool.sovereignweb.site/",
+  "repository": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants",
+  "branch": "dev",
+  "restart": "restart.md",
+  "now": "now.md",
+  "learnings": "learnings.md"
+}
