@@ -439,10 +439,12 @@
    "deadline_text": "No closing date stated. Money raised must be spent within three years of the share issue.",
    "deadline_dates": [],
    "eligibility_notes": "A tax relief for individual investors, not a grant. Company with a new qualifying trade, established in the UK, gross assets not over GBP 350,000 and fewer than 25 full-time equivalent staff. Not available if the company has had EIS or VCT investment.",
-   "official_url": "https://www.gov.uk/guidance/seed-enterprise-investment-scheme",
-   "further_official_urls": [],
+   "official_url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-to-use-the-seed-enterprise-investment-scheme",
+   "further_official_urls": [
+    "https://www.gov.uk/guidance/seed-enterprise-investment-scheme"
+   ],
    "date_checked": "2026-11-25",
-   "notes": "Page last updated 25 May 2023, according to the page.",
+   "notes": "Page last updated 25 May 2023, according to the page read before the address moved; the new address was confirmed to load, but its text has not been re-read.",
    "in_starting_list": false
   },
   {
