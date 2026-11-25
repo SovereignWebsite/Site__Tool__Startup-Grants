@@ -1,0 +1,17 @@
+/* The "Choose a design" picker, shown at the top of every page while designs are open for a pick (Dinis Cruz's standing rule).
+   System colours, so it follows light and dark without its own palette. */
+.dp{background:Canvas;color:CanvasText;border-block:1px solid color-mix(in srgb,CanvasText 25%,transparent);padding:.6rem 1rem;font:15px/1.4 system-ui,-apple-system,Segoe UI,sans-serif}
+.dp-in{max-width:70rem;margin:0 auto}
+.dp h2{font-size:1rem;margin:0 0 .15rem}
+.dp p{margin:0 0 .5rem;font-size:.85rem}
+.dp ul{list-style:none;margin:0;padding:0 0 .3rem;display:flex;gap:.7rem;overflow-x:auto}
+.dp li{flex:0 0 auto;width:10.5rem;display:flex}
+.dp a{display:block;flex:1;color:LinkText;text-decoration:none;border:1px solid color-mix(in srgb,CanvasText 25%,transparent);border-radius:6px;padding:.3rem;min-height:44px}
+.dp a:hover,.dp a:focus-visible{outline:3px solid Highlight;outline-offset:1px}
+.dp a[aria-current]{border:2px solid Highlight}
+.dp img{display:block;width:100%;height:auto;border-radius:3px;margin-bottom:.25rem}
+.dp .n{display:block;font-weight:600;font-size:.82rem;color:CanvasText}
+.dp .t{display:inline-block;font-size:.72rem;border:1px solid currentColor;border-radius:99px;padding:0 .4rem;margin-top:.15rem;color:CanvasText}
+@media print{.dp{display:none}}
+.dp .muted{display:block;font-size:.75rem;color:CanvasText;opacity:1}
+.dp p a{display:inline;border:0;padding:0;min-height:0;text-decoration:underline}
