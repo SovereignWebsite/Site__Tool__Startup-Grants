@@ -1,0 +1,47 @@
+{
+ "about": "Screenshots kept in the public vault (req343ij on dev.send.sgraph.ai) and shown on /provenance/. Each says how and when it was taken.",
+ "screenshots": [
+  {
+   "file": "00-vault-first-render.jpg",
+   "title": "The vault's own page as first rendered from the vault",
+   "detail": "Read through the vault's read-only address on dev.vault.sgraph.ai (vault req343ij, first snapshot), taken with headless Chromium (Playwright) by startup-grants.a on 2026-11-25 at about 01:30 UTC. This is the picture that comes from the vault itself.",
+   "width": 1280,
+   "height": 900
+  },
+  {
+   "file": "01-home.jpg",
+   "title": "The live home page: filters and one card per programme",
+   "detail": "Live page https://startup-grants.tool.sovereignweb.site/, taken with headless Chromium (Playwright) by startup-grants.a on 2026-11-25 01:38 UTC. Site version v0.1.15 c8c188a.",
+   "width": 1280,
+   "height": 800
+  },
+  {
+   "file": "02-provenance.jpg",
+   "title": "The provenance page: the chain from official page to entry, and every address tried",
+   "detail": "Live page https://startup-grants.tool.sovereignweb.site/provenance/, taken with headless Chromium (Playwright) by startup-grants.a on 2026-11-25 01:38 UTC. Site version v0.1.15 c8c188a.",
+   "width": 1280,
+   "height": 800
+  },
+  {
+   "file": "03-fit.jpg",
+   "title": "The fit check with example answers (United Kingdom, 1.5 years old, 4 staff, technology readiness level 7)",
+   "detail": "Live page https://startup-grants.tool.sovereignweb.site/fit/, taken with headless Chromium (Playwright) by startup-grants.a on 2026-11-25 01:38 UTC. Site version v0.1.15 c8c188a.",
+   "width": 1280,
+   "height": 800
+  },
+  {
+   "file": "04-graph.jpg",
+   "title": "The graph with the EIC Accelerator selected: what it connects to",
+   "detail": "Live page https://startup-grants.tool.sovereignweb.site/graph/, taken with headless Chromium (Playwright) by startup-grants.a on 2026-11-25 01:38 UTC. Site version v0.1.15 c8c188a.",
+   "width": 1280,
+   "height": 800
+  },
+  {
+   "file": "05-vault-second-render.jpg",
+   "title": "The vault's own page, second snapshot, showing the screenshots above",
+   "detail": "Read back from the vault through its read-only address on dev.vault.sgraph.ai (vault req343ij, second snapshot), taken with headless Chromium (Playwright) by startup-grants.a on 2026-11-25 at about 01:42 UTC. The page loads its data from the vault's own files and shows the screenshots stored in the vault.",
+   "width": 1280,
+   "height": 900
+  }
+ ]
+}

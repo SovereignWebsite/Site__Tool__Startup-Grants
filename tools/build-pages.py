@@ -38,6 +38,8 @@ for s in G['sources']:
     srows+=f'''<tr><td>{(esc(s['url']) if dead else '<a href="%s">%s</a>'%(esc(s['url']),esc(s['host'] or s['id']))) if s['url'] else esc(s['id'])}</td><td><span class="pill {'ok' if s['outcome']=='read' else ''}">{esc(s['outcome'])}</span></td><td>{esc(s['method'])}</td><td>{esc(s['read_on'])}</td><td>{esc(s['note'])}</td></tr>\n'''
 nread=sum(1 for s in G['sources'] if s['outcome']=='read')
 nfail=sum(1 for s in G['sources'] if s['outcome'] in('not read','refused'))
+CAPS=json.load(open(R+'assets/provenance/captions.json'))['screenshots']
+shots=''.join(f'<figure><a href="/assets/provenance/{esc(c["file"])}"><img src="/assets/provenance/{esc(c["file"])}" width="{c["width"]}" height="{c["height"]}" loading="lazy" alt="{esc(c["title"])}"></a><figcaption><strong>{esc(c["title"])}</strong><br>{esc(c["detail"])}</figcaption></figure>' for c in CAPS)
 main=f'''<div class="mark">Provenance</div>
 <h1>How we know</h1>
 <p>Every entry on this site comes from the programme's own official page. This page shows the whole chain, who read what and when, what failed, and what we did not trust. {len(progs)} programmes, {len(G['sources'])} source records ({nread} read, {nfail} not read or refused).</p>
@@ -57,6 +59,9 @@ main=f'''<div class="mark">Provenance</div>
 </ul>
 <h2>Cross-check with PrompTugal News</h2>
 <p>PrompTugal News holds its own research on EU programmes (<a href="https://github.com/PrompTugal/PrompTugal__News__Startups/blob/dev/data/research/eu.json">data/research/eu.json</a>, read 21 November 2026 by a different agent). Where both give an amount or date they agree: EIC Accelerator, EIC Transition and Women TechEU. EIC Pathfinder is listed there with no amount.</p>
+<h2>Screenshots, kept in the vault</h2>
+<p>These pictures are stored in the vault as well as here. The first and last show the vault's own page as read back from the vault; the others are this site's pages as live at the time.</p>
+<div class="shots">{shots}</div>
 <h2>Entries</h2>
 <div class="tblwrap" tabindex="0" role="region" aria-label="Entries and how each was read"><table class="tbl"><thead><tr><th scope="col">Programme (official page)</th><th scope="col">Read on</th><th scope="col">How it was read</th><th scope="col">Page licence</th><th scope="col">Cross-check</th></tr></thead><tbody>
 {rows}</tbody></table></div>
@@ -66,7 +71,7 @@ main=f'''<div class="mark">Provenance</div>
 {srows}</tbody></table></div>
 <p>The same records are in <a href="/data/sources.json">sources.json</a>. The data files: <a href="/data/grants.json">grants.json</a>, <a href="/data/graph.json">graph.json</a>, <a href="/data/grants.jsonld">grants.jsonld</a>, described in <a href="/data/SCHEMA.md">the schema</a>.</p>
 '''
-make('/provenance/','How we know: Startup grants in Europe and the UK','The chain from official page to entry, who read what and when, and every address tried, including those that failed.',main)
+make('/provenance/','How we know: Startup grants in Europe and the UK','The chain from official page to entry, who read what and when, and every address tried, including those that failed.',main,'.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(18rem,100%),1fr));gap:1rem}.shots figure{margin:0;border:1px solid var(--line);border-radius:8px;padding:.6rem}.shots img{width:100%;height:auto;display:block;border-radius:4px}.shots figcaption{font-size:.85rem;color:var(--muted);margin-top:.4rem}.shots figcaption strong{color:var(--fg)}')
 # ---------- plan ----------
 main='''<div class="mark">Plan</div>
 <h1>The map: sources, provenance, refresh and the fit check</h1>

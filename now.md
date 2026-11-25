@@ -5,7 +5,7 @@ Keeper: startup-grants.a@SovereignWebsite.dinis. Session: https://claude.ai/code
 ## State
 - Data: 17 programmes and 25 open UK competitions from official pages; 20 other addresses not yet read, each with a reason (site/data/grants.json).
 - Pages: home (filters), /fit/, /graph/, /provenance/, /plan/, five design directions in two rounds (/designs/, /designs/round-2/). Live pages are on the cards design until Dinis picks.
-- Vault: created on dev.send.sgraph.ai (id req343ij), read-only address held by the keeper and given to Dinis, not published on the site.
+- Vault: dev.send.sgraph.ai id req343ij, three snapshots (data, UK coverage and live screenshots, the vault's own second render). Read-only address given to Dinis, not published on the site. The same six screenshots are on /provenance/.
 - Open questions for Dinis: which design; whether to publish the vault's read-only address (the site's leak scan blocks read keys); whether blocked pages may be re-read in a browser.
 
 ## Incident, 2026-11-25
@@ -15,6 +15,6 @@ Keeper: startup-grants.a@SovereignWebsite.dinis. Session: https://claude.ai/code
 - Since then: sgit output is redirected to files and only the vault id is read back.
 
 ## Next
-- Live screenshots of the deployed pages into the vault, then a screenshot taken from the vault's own page.
+- Done: screenshots from the live site and from the vault itself are in the vault and on /provenance/.
 - Find official addresses for the pages that returned 404 (Scottish Enterprise R&D grants, UK R&D tax relief, Innovate UK funding page) and read more UK programmes.
 - Refresh: see /plan/.
