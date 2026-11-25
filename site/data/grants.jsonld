@@ -155,7 +155,8 @@
     "name": "European Innovation Council, European Commission"
    },
    "areaServed": [
-    "EU-wide"
+    "EU-wide",
+    "United Kingdom"
    ],
    "sg:stages": [
     "research"
@@ -193,7 +194,8 @@
     "name": "European Innovation Council, European Commission"
    },
    "areaServed": [
-    "EU-wide"
+    "EU-wide",
+    "United Kingdom"
    ],
    "sg:stages": [
     "early-stage",
@@ -206,6 +208,10 @@
    "sg:dateChecked": "2026-11-25",
    "sg:criteria": [
     {
+     "type": "country_eu_or_associated",
+     "text": "Established in an EU Member State or a Horizon Europe associated country (the UK is one, per the UKRI page)."
+    },
+    {
      "type": "trl_between",
      "min": 6,
      "max": 8,
@@ -213,7 +219,7 @@
     },
     {
      "type": "text_only",
-     "text": "Start-up or SME in an EU Member State or associated country; small mid-caps (up to 499 staff) for investment only."
+     "text": "Start-up or SME; small mid-caps (up to 499 staff) for investment only."
     }
    ],
    "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
@@ -232,7 +238,8 @@
     "name": "European Innovation Council, European Commission"
    },
    "areaServed": [
-    "EU-wide"
+    "EU-wide",
+    "United Kingdom"
    ],
    "sg:stages": [
     "research",
@@ -244,6 +251,10 @@
    "sg:deadlineType": "fixed",
    "sg:dateChecked": "2026-11-25",
    "sg:criteria": [
+    {
+     "type": "country_eu_or_associated",
+     "text": "Single legal entity established in an EU Member State or a Horizon Europe associated country (the UK is one, per the UKRI page)."
+    },
     {
      "type": "trl_between",
      "min": 4,
@@ -321,7 +332,8 @@
     "name": "European Research Council"
    },
    "areaServed": [
-    "EU-wide"
+    "EU-wide",
+    "United Kingdom"
    ],
    "sg:stages": [
     "research"
@@ -534,6 +546,51 @@
     "https://www.ukri.org/councils/innovate-uk/guidance-for-applicants/guidance-for-specific-funds/knowledge-transfer-partnership-guidance/",
     "https://www.ukri.org/councils/innovate-uk/guidance-for-applicants/guidance-for-specific-funds/knowledge-transfer-partnership-guidance/dates-and-deadlines-for-ktp-applicants/",
     "https://www.investni.com/support-for-business/innovation-support/innovate-uk-knowledge-transfer-partnerships"
+   ]
+  },
+  {
+   "@id": "https://startup-grants.tool.sovereignweb.site/#start-up-loans",
+   "@type": "Thing",
+   "name": "Start Up Loans",
+   "url": "https://www.gov.uk/apply-start-up-loan",
+   "funder": {
+    "@type": "Organization",
+    "name": "Government-backed Start Up Loans (the gov.uk page does not name the lender)"
+   },
+   "areaServed": [
+    "United Kingdom"
+   ],
+   "sg:stages": [
+    "pre-seed",
+    "early-stage"
+   ],
+   "sg:sectors": [
+    "any"
+   ],
+   "sg:deadlineType": "not-stated",
+   "sg:dateChecked": "2026-11-25",
+   "sg:criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "GB"
+     ],
+     "text": "You live in the UK, with a UK-based business."
+    },
+    {
+     "type": "age_years_max",
+     "value": 5,
+     "text": "The business has been fully trading for less than 5 years (or you plan to start one)."
+    },
+    {
+     "type": "text_only",
+     "text": "You are 18 or over. It is an unsecured personal loan, repaid over 1 to 5 years, with a credit check."
+    }
+   ],
+   "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
+   "sg:writtenBy": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+   "sg:sourceUrls": [
+    "https://www.gov.uk/apply-start-up-loan"
    ]
   },
   {

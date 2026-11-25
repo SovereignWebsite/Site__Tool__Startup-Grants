@@ -102,7 +102,7 @@ h2{margin-top:2.2rem}ul.plain li,ol li{color:var(--fg)}
 <p>This page maps what exists, what is next, and what needs a decision. It is a plan, not a promise: each step says who does it and what it needs.</p>
 <h2>What exists now</h2>
 <ul class="plain">
-<li><strong>Data:</strong> 16 programmes and 25 open UK competitions from official pages, 19 starting-list items not yet read, with reasons (<a href="/data/grants.json">grants.json</a>).</li>
+<li><strong>Data:</strong> 17 programmes and 25 open UK competitions from official pages, 20 starting-list items and other addresses not yet read, with reasons (<a href="/data/grants.json">grants.json</a>).</li>
 <li><strong>Provenance:</strong> a record for every entry and every address tried (<a href="/provenance/">Provenance</a>, <a href="/data/sources.json">sources.json</a>), in the same shape PrompTugal News uses for its own facts.</li>
 <li><strong>Semantic graph:</strong> funders, programmes, countries, stages, sectors, official pages and readers as nodes and edges (<a href="/graph/">Graph</a>, <a href="/data/graph.json">graph.json</a>, <a href="/data/grants.jsonld">grants.jsonld</a>).</li>
 <li><strong>Fit check:</strong> a form that compares a startup's answers with the criteria the official pages state (<a href="/fit/">Check my fit</a>).</li>
@@ -113,10 +113,10 @@ h2{margin-top:2.2rem}ul.plain li,ol li{color:var(--fg)}
 <h2>Data model (from the research brief, checked against what we hold)</h2>
 <table class="tbl" style="min-width:0"><thead><tr><th scope="col">Entity</th><th scope="col">Today</th><th scope="col">Next</th></tr></thead><tbody>
 <tr><th scope="row">Funder</th><td>A text field on each programme</td><td>Its own record, so one funder links many programmes</td></tr>
-<tr><th scope="row">Programme</th><td>16 entries</td><td>More, from the 19 gaps and the EU portal</td></tr>
+<tr><th scope="row">Programme</th><td>17 entries</td><td>More, from the 19 gaps and the EU portal</td></tr>
 <tr><th scope="row">Call</th><td>25 UK competitions, kept separate</td><td>Link each call to its programme; add EU calls</td></tr>
-<tr><th scope="row">Eligibility</th><td>Structured criteria for 16 programmes, only what pages state</td><td>More criteria as pages are read in full</td></tr>
-<tr><th scope="row">Source</th><td>51 records, with outcome and reader</td><td>A hash of each page's text, to see when it changes</td></tr>
+<tr><th scope="row">Eligibility</th><td>Structured criteria for 17 programmes, only what pages state</td><td>More criteria as pages are read in full</td></tr>
+<tr><th scope="row">Source</th><td>55 records, with outcome and reader</td><td>A hash of each page's text, to see when it changes</td></tr>
 <tr><th scope="row">Instrument type</th><td>Programme, route or tax relief</td><td>Grant, loan, equity, prize, cascade, accelerator, as the brief suggests</td></tr>
 </tbody></table>
 <h2>Refresh: how the site keeps itself current</h2>
@@ -131,7 +131,7 @@ h2{margin-top:2.2rem}ul.plain li,ol li{color:var(--fg)}
 <p>Needs a decision: where the job runs. It cannot be on this static site. Options are a scheduled GitHub Actions job in this repository, or the keeper's own scheduled session. Either needs the permission to read the blocked pages in a browser to be settled first.</p>
 <h2>Where it is not enough</h2>
 <ul class="plain">
-<li>Nineteen starting-list pages refused automated reading or have moved; they stay gaps until read.</li>
+<li>20 pages refused automated reading, have moved or are hubs; they stay gaps until read.</li>
 <li>The fit check can only use criteria the pages state in numbers or places. Everything else is shown as text for the reader to judge.</li>
 <li>Nothing here is advice, and only the funder decides who is eligible.</li>
 </ul>

@@ -39,7 +39,63 @@
    "GB": "United Kingdom",
    "GB-NIR": "Northern Ireland"
   },
+  "eu_member_states": [
+   "AT",
+   "BE",
+   "BG",
+   "HR",
+   "CY",
+   "CZ",
+   "DK",
+   "EE",
+   "FI",
+   "FR",
+   "DE",
+   "GR",
+   "HU",
+   "IE",
+   "IT",
+   "LV",
+   "LT",
+   "LU",
+   "MT",
+   "NL",
+   "PL",
+   "PT",
+   "RO",
+   "SK",
+   "SI",
+   "ES",
+   "SE"
+  ],
+  "horizon_europe_associated": [
+   "AL",
+   "AM",
+   "BA",
+   "CA",
+   "EG",
+   "FO",
+   "GE",
+   "IS",
+   "IL",
+   "JP",
+   "KR",
+   "XK",
+   "MD",
+   "ME",
+   "NZ",
+   "MK",
+   "NO",
+   "RS",
+   "CH",
+   "TR",
+   "TN",
+   "UA",
+   "GB"
+  ],
+  "country_lists_note": "horizon_europe_associated is the list on the European Commission page on association to Horizon Europe, read 25 November 2026 (23 entries; the page shows no date). GB covers Northern Ireland. eu_member_states is the keeper's reference list: EU membership was not read from a page here.",
   "criteria_types": {
+   "country_eu_or_associated": "Established in an EU Member State or a Horizon Europe associated country (see eu_member_states and horizon_europe_associated)",
    "country_in": "Registered or located in one of the listed places",
    "age_years_max": "Company no older than this many years",
    "age_months_max": "Company no older than this many months (may be before incorporation if allow_pre_incorporation)",
@@ -259,7 +315,8 @@
    "name": "EIC Pathfinder",
    "organisation": "European Innovation Council, European Commission",
    "countries": [
-    "EU"
+    "EU",
+    "GB"
    ],
    "geography": "eu",
    "kind": "programme",
@@ -283,7 +340,7 @@
    "official_url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en",
    "further_official_urls": [],
    "date_checked": "2026-11-25",
-   "notes": "Page states 2027 budgets of EUR 82 million (Challenges) and EUR 166 million (Open).",
+   "notes": "Page states 2027 budgets of EUR 82 million (Challenges) and EUR 166 million (Open). UK: the UKRI page 'Horizon Europe: help for UK applicants' (last updated 19 August 2026) says the UK has been associated to Horizon Europe since January 2024 and UK applicants can receive funding directly from the European Commission for calls from Work Programmes 2024 to 2027. The programme page says 'Associated Country' and does not name the UK, so UK eligibility is read from the two pages together. For a UK entity this means a consortium partner: at least one partner must be in an EU Member State.",
    "in_starting_list": true,
    "criteria": [
     {
@@ -321,7 +378,8 @@
    "name": "EIC Accelerator",
    "organisation": "European Innovation Council, European Commission",
    "countries": [
-    "EU"
+    "EU",
+    "GB"
    ],
    "geography": "eu",
    "kind": "programme",
@@ -347,9 +405,13 @@
    "official_url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
    "further_official_urls": [],
    "date_checked": "2026-11-25",
-   "notes": "The page says both 3 steps and 4 steps for the process.",
+   "notes": "The page says both 3 steps and 4 steps for the process. UK: the UKRI page 'Horizon Europe: help for UK applicants' (last updated 19 August 2026) says the UK has been associated to Horizon Europe since January 2024 and UK applicants can receive funding directly from the European Commission for calls from Work Programmes 2024 to 2027. The programme page says 'Associated Country' and does not name the UK, so UK eligibility is read from the two pages together.",
    "in_starting_list": true,
    "criteria": [
+    {
+     "type": "country_eu_or_associated",
+     "text": "Established in an EU Member State or a Horizon Europe associated country (the UK is one, per the UKRI page)."
+    },
     {
      "type": "trl_between",
      "min": 6,
@@ -358,7 +420,7 @@
     },
     {
      "type": "text_only",
-     "text": "Start-up or SME in an EU Member State or associated country; small mid-caps (up to 499 staff) for investment only."
+     "text": "Start-up or SME; small mid-caps (up to 499 staff) for investment only."
     }
    ],
    "provenance": {
@@ -385,7 +447,8 @@
    "name": "EIC Transition",
    "organisation": "European Innovation Council, European Commission",
    "countries": [
-    "EU"
+    "EU",
+    "GB"
    ],
    "geography": "eu",
    "kind": "programme",
@@ -408,9 +471,13 @@
    "official_url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-transition_en",
    "further_official_urls": [],
    "date_checked": "2026-11-25",
-   "notes": "The page says the 2026 list of eligible projects applies and a 2027 list is being prepared.",
+   "notes": "The page says the 2026 list of eligible projects applies and a 2027 list is being prepared. UK: the UKRI page 'Horizon Europe: help for UK applicants' (last updated 19 August 2026) says the UK has been associated to Horizon Europe since January 2024 and UK applicants can receive funding directly from the European Commission for calls from Work Programmes 2024 to 2027. The programme page says 'Associated Country' and does not name the UK, so UK eligibility is read from the two pages together.",
    "in_starting_list": true,
    "criteria": [
+    {
+     "type": "country_eu_or_associated",
+     "text": "Single legal entity established in an EU Member State or a Horizon Europe associated country (the UK is one, per the UKRI page)."
+    },
     {
      "type": "trl_between",
      "min": 4,
@@ -517,7 +584,8 @@
    "name": "ERC Starting Grant",
    "organisation": "European Research Council",
    "countries": [
-    "EU"
+    "EU",
+    "GB"
    ],
    "geography": "eu",
    "kind": "programme",
@@ -537,7 +605,7 @@
    "official_url": "https://erc.europa.eu/apply-grant/starting-grant",
    "further_official_urls": [],
    "date_checked": "2026-11-25",
-   "notes": "Included because it is in the starting list; it suits researchers, not start-ups directly.",
+   "notes": "Included because it is in the starting list; it suits researchers, not start-ups directly. UK: the UKRI page 'Horizon Europe: help for UK applicants' (last updated 19 August 2026) says the UK has been associated to Horizon Europe since January 2024 and UK applicants can receive funding directly from the European Commission for calls from Work Programmes 2024 to 2027. The programme page says 'Associated Country' and does not name the UK, so UK eligibility is read from the two pages together.",
    "in_starting_list": true,
    "criteria": [
     {
@@ -851,6 +919,69 @@
     "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
     "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
     "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page. Also: the guidance page and its costs and dates pages read; the gov.uk address redirects to ukri.org.",
+    "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
+    "source_license": {
+     "licence": "not checked yet",
+     "from": "no record"
+    },
+    "cross_check": null
+   }
+  },
+  {
+   "id": "start-up-loans",
+   "name": "Start Up Loans",
+   "organisation": "Government-backed Start Up Loans (the gov.uk page does not name the lender)",
+   "countries": [
+    "GB"
+   ],
+   "geography": "national",
+   "kind": "loan",
+   "stages": [
+    "pre-seed",
+    "early-stage"
+   ],
+   "sectors": [
+    "any"
+   ],
+   "funding_amount_text": "A government-backed loan of GBP 500 to GBP 25,000, as stated.",
+   "funding_rate_text": "Fixed interest rate of 7.5% per year, repaid over 1 to 5 years; no application fee and no early repayment fee, as stated.",
+   "how_to_apply": "Register and start through the Start now link to the Start Up Loans website; a credit check is required.",
+   "deadline_type": "not-stated",
+   "deadline_text": "No deadline or open or closed wording on the page.",
+   "deadline_dates": [],
+   "eligibility_notes": "You live in the UK, are 18 or over, and have or plan to start a UK-based business that has been fully trading for less than 5 years. The page says it is an unsecured personal loan, not a business loan. Successful applicants get up to 12 months of free mentoring.",
+   "official_url": "https://www.gov.uk/apply-start-up-loan",
+   "further_official_urls": [],
+   "date_checked": "2026-11-25",
+   "notes": "A loan, not a grant. The Start Up Loans website itself returned 403 to the reader, so only the gov.uk page was read.",
+   "in_starting_list": false,
+   "criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "GB"
+     ],
+     "text": "You live in the UK, with a UK-based business."
+    },
+    {
+     "type": "age_years_max",
+     "value": 5,
+     "text": "The business has been fully trading for less than 5 years (or you plan to start one)."
+    },
+    {
+     "type": "text_only",
+     "text": "You are 18 or over. It is an unsecured personal loan, repaid over 1 to 5 years, with a credit check."
+    }
+   ],
+   "provenance": {
+    "source_url": "https://www.gov.uk/apply-start-up-loan",
+    "further_source_urls": [],
+    "read_on": "2026-11-25",
+    "file": "site/data/grants.json",
+    "file_url": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants/blob/dev/site/data/grants.json",
+    "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
+    "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+    "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page.",
     "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
     "source_license": {
      "licence": "not checked yet",
@@ -1349,22 +1480,28 @@
    "reason": "A hub for all UKRI funding, not one programme."
   },
   {
-   "name": "Start Up Loans",
-   "country": "GB",
-   "starting_list_url": "https://www.startuploans.co.uk/",
-   "reason": "The site refused the request (403)."
-  },
-  {
    "name": "Wales start-up funding",
    "country": "GB-WLS",
+   "starting_list_url": "https://businesswales.gov.wales/topics-and-guidance/business-finance-and-grants",
+   "reason": "Business Wales pages read on 25 November 2026 name no start-up grant or loan with an amount; the Development Bank of Wales site could not be reached from the builder's network."
+  },
+  {
+   "name": "Innovate UK Smart grants, Launchpad, Biomedical Catalyst, Innovation Loans",
+   "country": "GB",
    "starting_list_url": "",
-   "reason": "The host for the Development Bank of Wales could not be reached from the builder's network; Business Wales not yet tried."
+   "reason": "Not found on any official page read. The gov.uk Innovate UK collection address tried returned 404, and the Innovate UK page lists only an Innovation loans pilot overview dated 25 January 2018."
+  },
+  {
+   "name": "UK R&D tax relief",
+   "country": "GB",
+   "starting_list_url": "",
+   "reason": "The gov.uk address tried returned 404; the current official address has not been found yet. This is a tax relief, not a grant."
   },
   {
    "name": "Scottish Enterprise grants",
    "country": "GB-SCT",
    "starting_list_url": "https://www.scottish-enterprise.com/how-we-can-help/funding-and-grants/business-grants-and-funding-calls",
-   "reason": "An index of grants and calls with no start-up programme stated; the research and development grants page is not yet read."
+   "reason": "An index of grants and calls with no start-up programme stated; the research and development grants address tried returned 404, so that page is not yet read."
   }
  ],
  "sources": [
@@ -1663,6 +1800,22 @@
    }
   },
   {
+   "id": "src-start-up-loans",
+   "url": "https://www.gov.uk/apply-start-up-loan",
+   "host": "www.gov.uk",
+   "outcome": "read",
+   "programmes": [
+    "start-up-loans"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
    "id": "src-seis",
    "url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-to-use-the-seed-enterprise-investment-scheme",
    "host": "www.gov.uk",
@@ -1737,6 +1890,58 @@
    "method": "fetched by a web-fetch sub-agent",
    "read_on": "2026-11-25",
    "note": "",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-eu-association",
+   "url": "https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/europe-world/international-cooperation/association-horizon-europe_en",
+   "host": "research-and-innovation.ec.europa.eu",
+   "outcome": "read",
+   "programmes": [
+    "eic-accelerator",
+    "eic-transition",
+    "eic-pathfinder",
+    "erc-starting-grant"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "list of 23 associated countries; shows no date",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-ukri-horizon",
+   "url": "https://www.ukri.org/apply-for-funding/horizon-europe/",
+   "host": "www.ukri.org",
+   "outcome": "read",
+   "programmes": [
+    "eic-accelerator",
+    "eic-transition",
+    "eic-pathfinder",
+    "erc-starting-grant"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "UKRI page last updated 19 August 2026: UK associated since January 2024",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-business-wales",
+   "url": "https://businesswales.gov.wales/topics-and-guidance/business-finance-and-grants",
+   "host": "businesswales.gov.wales",
+   "outcome": "read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "three Business Wales pages read; none names a start-up grant or loan with an amount",
    "license": {
     "licence": "not checked yet",
     "from": "no record"
@@ -1999,14 +2204,14 @@
    }
   },
   {
-   "id": "gap-start-up-loans",
-   "url": "https://www.startuploans.co.uk/",
-   "host": "www.startuploans.co.uk",
+   "id": "gap-wales-start-up-funding",
+   "url": "https://businesswales.gov.wales/topics-and-guidance/business-finance-and-grants",
+   "host": "businesswales.gov.wales",
    "outcome": "not read",
    "programmes": [],
    "method": "fetched by a web-fetch sub-agent",
    "read_on": "2026-11-25",
-   "note": "The site refused the request (403).",
+   "note": "Business Wales pages read on 25 November 2026 name no start-up grant or loan with an amount; the Development Bank of Wales site could not be reached from the builder's network.",
    "license": {
     "licence": "not checked yet",
     "from": "no record"
@@ -2020,7 +2225,7 @@
    "programmes": [],
    "method": "fetched by a web-fetch sub-agent",
    "read_on": "2026-11-25",
-   "note": "An index of grants and calls with no start-up programme stated; the research and development grants page is not yet read.",
+   "note": "An index of grants and calls with no start-up programme stated; the research and development grants address tried returned 404, so that page is not yet read.",
    "license": {
     "licence": "not checked yet",
     "from": "no record"

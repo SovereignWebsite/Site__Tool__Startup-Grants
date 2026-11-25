@@ -141,7 +141,8 @@ function ans(){var n=function(i){var v=$(i).value;return v===''?null:Number(v)};
  var pre=$('q-pre').checked;return{country:$('q-country').value,pre:pre,age:pre?0:n('q-age'),fte:n('q-fte'),stage:$('q-stage').value,sector:$('q-sector').value,trl:n('q-trl'),eq:n('q-eq'),ga:n('q-ga'),w:$('q-w').value}}
 // returns 'pass' | 'fail' | 'unknown'
 function test(c,a,p){switch(c.type){
- case 'country_in':return !a.country?'unknown':(c.values.indexOf(a.country)>=0?'pass':'fail');
+ case 'country_in':return !a.country?'unknown':((c.values.indexOf(a.country)>=0||(a.country==='GB-NIR'&&c.values.indexOf('GB')>=0))?'pass':'fail');
+ case 'country_eu_or_associated':{if(!a.country)return 'unknown';if(a.country==='OTHER')return 'unknown';var cc=a.country==='GB-NIR'?'GB':a.country,V=D.vocabularies;return (V.eu_member_states.indexOf(cc)>=0||V.horizon_europe_associated.indexOf(cc)>=0)?'pass':'unknown'}
  case 'age_years_max':return a.age==null?'unknown':(a.age<=c.value?'pass':'fail');
  case 'age_months_max':return a.age==null?'unknown':(a.pre?(c.allow_pre_incorporation?'pass':'fail'):(a.age*12<=c.value?'pass':'fail'));
  case 'age_months_between':return a.pre?'fail':(a.age==null?'unknown':(a.age*12>=c.min&&a.age*12<=c.max?'pass':'fail'));

@@ -9,6 +9,7 @@ U='https://startup-grants.tool.sovereignweb.site'
 esc=lambda s:html.escape(str(s if s is not None else ''),quote=True)
 def make(path,title,desc,main,css='',script='',nav_current=''):
     t=tpl
+    main=main.replace('@@NPROG@@',str(len(G['programmes']))).replace('@@NGAP@@',str(len(G['not_yet_read']))).replace('@@NSRC@@',str(len(G['sources'])))
     pass
     t=t.replace('Start here: Startup grants in Europe and the UK',esc(title))
     t=t.replace("Where to start, for the owner of this site: connecting GitHub, the first change, and asking for more.",esc(desc))
@@ -72,7 +73,7 @@ main='''<div class="mark">Plan</div>
 <p>This page maps what exists, what is next, and what needs a decision. It is a plan, not a promise: each step says who does it and what it needs.</p>
 <h2>What exists now</h2>
 <ul class="plain">
-<li><strong>Data:</strong> 16 programmes and 25 open UK competitions from official pages, 19 starting-list items not yet read, with reasons (<a href="/data/grants.json">grants.json</a>).</li>
+<li><strong>Data:</strong> @@NPROG@@ programmes and 25 open UK competitions from official pages, @@NGAP@@ starting-list items and other addresses not yet read, with reasons (<a href="/data/grants.json">grants.json</a>).</li>
 <li><strong>Provenance:</strong> a record for every entry and every address tried (<a href="/provenance/">Provenance</a>, <a href="/data/sources.json">sources.json</a>), in the same shape PrompTugal News uses for its own facts.</li>
 <li><strong>Semantic graph:</strong> funders, programmes, countries, stages, sectors, official pages and readers as nodes and edges (<a href="/graph/">Graph</a>, <a href="/data/graph.json">graph.json</a>, <a href="/data/grants.jsonld">grants.jsonld</a>).</li>
 <li><strong>Fit check:</strong> a form that compares a startup's answers with the criteria the official pages state (<a href="/fit/">Check my fit</a>).</li>
@@ -83,10 +84,10 @@ main='''<div class="mark">Plan</div>
 <h2>Data model (from the research brief, checked against what we hold)</h2>
 <table class="tbl" style="min-width:0"><thead><tr><th scope="col">Entity</th><th scope="col">Today</th><th scope="col">Next</th></tr></thead><tbody>
 <tr><th scope="row">Funder</th><td>A text field on each programme</td><td>Its own record, so one funder links many programmes</td></tr>
-<tr><th scope="row">Programme</th><td>16 entries</td><td>More, from the 19 gaps and the EU portal</td></tr>
+<tr><th scope="row">Programme</th><td>@@NPROG@@ entries</td><td>More, from the 19 gaps and the EU portal</td></tr>
 <tr><th scope="row">Call</th><td>25 UK competitions, kept separate</td><td>Link each call to its programme; add EU calls</td></tr>
-<tr><th scope="row">Eligibility</th><td>Structured criteria for 16 programmes, only what pages state</td><td>More criteria as pages are read in full</td></tr>
-<tr><th scope="row">Source</th><td>51 records, with outcome and reader</td><td>A hash of each page's text, to see when it changes</td></tr>
+<tr><th scope="row">Eligibility</th><td>Structured criteria for @@NPROG@@ programmes, only what pages state</td><td>More criteria as pages are read in full</td></tr>
+<tr><th scope="row">Source</th><td>@@NSRC@@ records, with outcome and reader</td><td>A hash of each page's text, to see when it changes</td></tr>
 <tr><th scope="row">Instrument type</th><td>Programme, route or tax relief</td><td>Grant, loan, equity, prize, cascade, accelerator, as the brief suggests</td></tr>
 </tbody></table>
 <h2>Refresh: how the site keeps itself current</h2>
@@ -101,7 +102,7 @@ main='''<div class="mark">Plan</div>
 <p>Needs a decision: where the job runs. It cannot be on this static site. Options are a scheduled GitHub Actions job in this repository, or the keeper's own scheduled session. Either needs the permission to read the blocked pages in a browser to be settled first.</p>
 <h2>Where it is not enough</h2>
 <ul class="plain">
-<li>Nineteen starting-list pages refused automated reading or have moved; they stay gaps until read.</li>
+<li>@@NGAP@@ pages refused automated reading, have moved or are hubs; they stay gaps until read.</li>
 <li>The fit check can only use criteria the pages state in numbers or places. Everything else is shown as text for the reader to judge.</li>
 <li>Nothing here is advice, and only the funder decides who is eligible.</li>
 </ul>
@@ -142,7 +143,8 @@ function ans(){var n=function(i){var v=$(i).value;return v===''?null:Number(v)};
  var pre=$('q-pre').checked;return{country:$('q-country').value,pre:pre,age:pre?0:n('q-age'),fte:n('q-fte'),stage:$('q-stage').value,sector:$('q-sector').value,trl:n('q-trl'),eq:n('q-eq'),ga:n('q-ga'),w:$('q-w').value}}
 // returns 'pass' | 'fail' | 'unknown'
 function test(c,a,p){switch(c.type){
- case 'country_in':return !a.country?'unknown':(c.values.indexOf(a.country)>=0?'pass':'fail');
+ case 'country_in':return !a.country?'unknown':((c.values.indexOf(a.country)>=0||(a.country==='GB-NIR'&&c.values.indexOf('GB')>=0))?'pass':'fail');
+ case 'country_eu_or_associated':{if(!a.country)return 'unknown';if(a.country==='OTHER')return 'unknown';var cc=a.country==='GB-NIR'?'GB':a.country,V=D.vocabularies;return (V.eu_member_states.indexOf(cc)>=0||V.horizon_europe_associated.indexOf(cc)>=0)?'pass':'unknown'}
  case 'age_years_max':return a.age==null?'unknown':(a.age<=c.value?'pass':'fail');
  case 'age_months_max':return a.age==null?'unknown':(a.pre?(c.allow_pre_incorporation?'pass':'fail'):(a.age*12<=c.value?'pass':'fail'));
  case 'age_months_between':return a.pre?'fail':(a.age==null?'unknown':(a.age*12>=c.min&&a.age*12<=c.max?'pass':'fail'));

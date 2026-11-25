@@ -296,6 +296,22 @@
    }
   },
   {
+   "id": "src-start-up-loans",
+   "url": "https://www.gov.uk/apply-start-up-loan",
+   "host": "www.gov.uk",
+   "outcome": "read",
+   "programmes": [
+    "start-up-loans"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
    "id": "src-seis",
    "url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-to-use-the-seed-enterprise-investment-scheme",
    "host": "www.gov.uk",
@@ -370,6 +386,58 @@
    "method": "fetched by a web-fetch sub-agent",
    "read_on": "2026-11-25",
    "note": "",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-eu-association",
+   "url": "https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/europe-world/international-cooperation/association-horizon-europe_en",
+   "host": "research-and-innovation.ec.europa.eu",
+   "outcome": "read",
+   "programmes": [
+    "eic-accelerator",
+    "eic-transition",
+    "eic-pathfinder",
+    "erc-starting-grant"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "list of 23 associated countries; shows no date",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-ukri-horizon",
+   "url": "https://www.ukri.org/apply-for-funding/horizon-europe/",
+   "host": "www.ukri.org",
+   "outcome": "read",
+   "programmes": [
+    "eic-accelerator",
+    "eic-transition",
+    "eic-pathfinder",
+    "erc-starting-grant"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "UKRI page last updated 19 August 2026: UK associated since January 2024",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-business-wales",
+   "url": "https://businesswales.gov.wales/topics-and-guidance/business-finance-and-grants",
+   "host": "businesswales.gov.wales",
+   "outcome": "read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "three Business Wales pages read; none names a start-up grant or loan with an amount",
    "license": {
     "licence": "not checked yet",
     "from": "no record"
@@ -632,14 +700,14 @@
    }
   },
   {
-   "id": "gap-start-up-loans",
-   "url": "https://www.startuploans.co.uk/",
-   "host": "www.startuploans.co.uk",
+   "id": "gap-wales-start-up-funding",
+   "url": "https://businesswales.gov.wales/topics-and-guidance/business-finance-and-grants",
+   "host": "businesswales.gov.wales",
    "outcome": "not read",
    "programmes": [],
    "method": "fetched by a web-fetch sub-agent",
    "read_on": "2026-11-25",
-   "note": "The site refused the request (403).",
+   "note": "Business Wales pages read on 25 November 2026 name no start-up grant or loan with an amount; the Development Bank of Wales site could not be reached from the builder's network.",
    "license": {
     "licence": "not checked yet",
     "from": "no record"
@@ -653,7 +721,7 @@
    "programmes": [],
    "method": "fetched by a web-fetch sub-agent",
    "read_on": "2026-11-25",
-   "note": "An index of grants and calls with no start-up programme stated; the research and development grants page is not yet read.",
+   "note": "An index of grants and calls with no start-up programme stated; the research and development grants address tried returned 404, so that page is not yet read.",
    "license": {
     "licence": "not checked yet",
     "from": "no record"

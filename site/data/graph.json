@@ -116,6 +116,12 @@
    "url": null
   },
   {
+   "id": "country:GB",
+   "type": "country",
+   "label": "United Kingdom",
+   "url": null
+  },
+  {
    "id": "page:eic-pathfinder",
    "type": "official_page",
    "label": "eic.ec.europa.eu",
@@ -320,16 +326,28 @@
    "url": null
   },
   {
-   "id": "country:GB",
-   "type": "country",
-   "label": "United Kingdom",
-   "url": null
-  },
-  {
    "id": "page:innovate-uk-ktp",
    "type": "official_page",
    "label": "www.ukri.org",
    "url": "https://www.ukri.org/councils/innovate-uk/guidance-for-applicants/guidance-for-specific-funds/knowledge-transfer-partnership-guidance/"
+  },
+  {
+   "id": "start-up-loans",
+   "type": "programme",
+   "label": "Start Up Loans",
+   "url": "https://www.gov.uk/apply-start-up-loan"
+  },
+  {
+   "id": "org:c3fe1741",
+   "type": "funder",
+   "label": "Government-backed Start Up Loans (the gov.uk page does not name the lender)",
+   "url": null
+  },
+  {
+   "id": "page:start-up-loans",
+   "type": "official_page",
+   "label": "www.gov.uk",
+   "url": "https://www.gov.uk/apply-start-up-loan"
   },
   {
    "id": "seis",
@@ -521,6 +539,11 @@
   },
   {
    "source": "eic-pathfinder",
+   "target": "country:GB",
+   "rel": "open_to"
+  },
+  {
+   "source": "eic-pathfinder",
    "target": "stage:research",
    "rel": "suits"
   },
@@ -542,6 +565,11 @@
   {
    "source": "eic-accelerator",
    "target": "country:EU",
+   "rel": "open_to"
+  },
+  {
+   "source": "eic-accelerator",
+   "target": "country:GB",
    "rel": "open_to"
   },
   {
@@ -572,6 +600,11 @@
   {
    "source": "eic-transition",
    "target": "country:EU",
+   "rel": "open_to"
+  },
+  {
+   "source": "eic-transition",
+   "target": "country:GB",
    "rel": "open_to"
   },
   {
@@ -632,6 +665,11 @@
   {
    "source": "erc-starting-grant",
    "target": "country:EU",
+   "rel": "open_to"
+  },
+  {
+   "source": "erc-starting-grant",
+   "target": "country:GB",
    "rel": "open_to"
   },
   {
@@ -812,6 +850,36 @@
   {
    "source": "page:innovate-uk-ktp",
    "target": "innovate-uk-ktp",
+   "rel": "written_from"
+  },
+  {
+   "source": "org:c3fe1741",
+   "target": "start-up-loans",
+   "rel": "funds"
+  },
+  {
+   "source": "start-up-loans",
+   "target": "country:GB",
+   "rel": "open_to"
+  },
+  {
+   "source": "start-up-loans",
+   "target": "stage:pre-seed",
+   "rel": "suits"
+  },
+  {
+   "source": "start-up-loans",
+   "target": "stage:early-stage",
+   "rel": "suits"
+  },
+  {
+   "source": "start-up-loans",
+   "target": "sector:any",
+   "rel": "covers"
+  },
+  {
+   "source": "page:start-up-loans",
+   "target": "start-up-loans",
    "rel": "written_from"
   },
   {
@@ -1132,6 +1200,16 @@
   {
    "source": "agent:keeper",
    "target": "innovate-uk-ktp",
+   "rel": "wrote"
+  },
+  {
+   "source": "agent:fetch",
+   "target": "page:start-up-loans",
+   "rel": "read"
+  },
+  {
+   "source": "agent:keeper",
+   "target": "start-up-loans",
    "rel": "wrote"
   },
   {
