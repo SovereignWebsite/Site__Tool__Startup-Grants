@@ -1,0 +1,1168 @@
+{
+ "about": "Nodes and edges of the grants data: funder, programme, country, stage, sector, official page, who read and wrote it, and where the name came from. Built from grants.json by tools in the repository.",
+ "nodes": [
+  {
+   "id": "innosuisse-start-up-innovation-projects",
+   "type": "programme",
+   "label": "Start-up Innovation Projects",
+   "url": "https://www.innosuisse.admin.ch/en/start-up-innovation-projects"
+  },
+  {
+   "id": "org:f701c7c1",
+   "type": "funder",
+   "label": "Innosuisse, the Swiss Innovation Agency",
+   "url": null
+  },
+  {
+   "id": "country:CH",
+   "type": "country",
+   "label": "Switzerland",
+   "url": null
+  },
+  {
+   "id": "stage:early-stage",
+   "type": "stage",
+   "label": "Early-stage start-ups",
+   "url": null
+  },
+  {
+   "id": "sector:any",
+   "type": "sector",
+   "label": "Open to any field",
+   "url": null
+  },
+  {
+   "id": "page:innosuisse-start-up-innovation-projects",
+   "type": "official_page",
+   "label": "www.innosuisse.admin.ch",
+   "url": "https://www.innosuisse.admin.ch/en/start-up-innovation-projects"
+  },
+  {
+   "id": "go-bio-next",
+   "type": "programme",
+   "label": "GO-Bio next",
+   "url": "https://www.go-bio.de/gobio/en/go-bio/go-bio-next/go-bio-next.html"
+  },
+  {
+   "id": "org:302ea5e1",
+   "type": "funder",
+   "label": "Federal Ministry of Research, Technology and Space (BMFTR), Germany",
+   "url": null
+  },
+  {
+   "id": "country:DE",
+   "type": "country",
+   "label": "Germany",
+   "url": null
+  },
+  {
+   "id": "stage:research",
+   "type": "stage",
+   "label": "Researchers or research teams",
+   "url": null
+  },
+  {
+   "id": "sector:life-sciences",
+   "type": "sector",
+   "label": "Life sciences",
+   "url": null
+  },
+  {
+   "id": "page:go-bio-next",
+   "type": "official_page",
+   "label": "www.go-bio.de",
+   "url": "https://www.go-bio.de/gobio/en/go-bio/go-bio-next/go-bio-next.html"
+  },
+  {
+   "id": "women-tech-eu",
+   "type": "programme",
+   "label": "Women TechEU",
+   "url": "https://womentecheurope.eu/"
+  },
+  {
+   "id": "org:7a88f18e",
+   "type": "funder",
+   "label": "EU-funded project run by a consortium; granting authority EISMEA",
+   "url": null
+  },
+  {
+   "id": "country:EU",
+   "type": "country",
+   "label": "EU-wide",
+   "url": null
+  },
+  {
+   "id": "sector:deep-tech",
+   "type": "sector",
+   "label": "Deep tech",
+   "url": null
+  },
+  {
+   "id": "page:women-tech-eu",
+   "type": "official_page",
+   "label": "womentecheurope.eu",
+   "url": "https://womentecheurope.eu/"
+  },
+  {
+   "id": "eic-pathfinder",
+   "type": "programme",
+   "label": "EIC Pathfinder",
+   "url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en"
+  },
+  {
+   "id": "org:6add8ff2",
+   "type": "funder",
+   "label": "European Innovation Council, European Commission",
+   "url": null
+  },
+  {
+   "id": "page:eic-pathfinder",
+   "type": "official_page",
+   "label": "eic.ec.europa.eu",
+   "url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en"
+  },
+  {
+   "id": "eic-accelerator",
+   "type": "programme",
+   "label": "EIC Accelerator",
+   "url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en"
+  },
+  {
+   "id": "stage:scale-up",
+   "type": "stage",
+   "label": "Scale-ups",
+   "url": null
+  },
+  {
+   "id": "page:eic-accelerator",
+   "type": "official_page",
+   "label": "eic.ec.europa.eu",
+   "url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en"
+  },
+  {
+   "id": "eic-transition",
+   "type": "programme",
+   "label": "EIC Transition",
+   "url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-transition_en"
+  },
+  {
+   "id": "page:eic-transition",
+   "type": "official_page",
+   "label": "eic.ec.europa.eu",
+   "url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-transition_en"
+  },
+  {
+   "id": "aws-preseed-innovative-solutions",
+   "type": "programme",
+   "label": "aws Preseed: Innovative Solutions",
+   "url": "https://www.aws.at/en/aws-preseed-innovative-solutions/"
+  },
+  {
+   "id": "org:f7188180",
+   "type": "funder",
+   "label": "aws (Austria Wirtschaftsservice)",
+   "url": null
+  },
+  {
+   "id": "country:AT",
+   "type": "country",
+   "label": "Austria",
+   "url": null
+  },
+  {
+   "id": "stage:pre-seed",
+   "type": "stage",
+   "label": "Before or around incorporation",
+   "url": null
+  },
+  {
+   "id": "page:aws-preseed-innovative-solutions",
+   "type": "official_page",
+   "label": "www.aws.at",
+   "url": "https://www.aws.at/en/aws-preseed-innovative-solutions/"
+  },
+  {
+   "id": "erc-starting-grant",
+   "type": "programme",
+   "label": "ERC Starting Grant",
+   "url": "https://erc.europa.eu/apply-grant/starting-grant"
+  },
+  {
+   "id": "org:c49fa14c",
+   "type": "funder",
+   "label": "European Research Council",
+   "url": null
+  },
+  {
+   "id": "page:erc-starting-grant",
+   "type": "official_page",
+   "label": "erc.europa.eu",
+   "url": "https://erc.europa.eu/apply-grant/starting-grant"
+  },
+  {
+   "id": "innobooster",
+   "type": "programme",
+   "label": "Innobooster",
+   "url": "https://danmarksinnovationsfond.dk/en/programmes/innobooster/"
+  },
+  {
+   "id": "org:cd43a5d8",
+   "type": "funder",
+   "label": "Innovation Fund Denmark",
+   "url": null
+  },
+  {
+   "id": "country:DK",
+   "type": "country",
+   "label": "Denmark",
+   "url": null
+  },
+  {
+   "id": "stage:sme",
+   "type": "stage",
+   "label": "Established small or medium-sized businesses",
+   "url": null
+  },
+  {
+   "id": "sector:green-tech",
+   "type": "sector",
+   "label": "Green and clean technology",
+   "url": null
+  },
+  {
+   "id": "sector:digital",
+   "type": "sector",
+   "label": "Digital",
+   "url": null
+  },
+  {
+   "id": "sector:defence-security",
+   "type": "sector",
+   "label": "Defence and security",
+   "url": null
+  },
+  {
+   "id": "page:innobooster",
+   "type": "official_page",
+   "label": "danmarksinnovationsfond.dk",
+   "url": "https://danmarksinnovationsfond.dk/en/programmes/innobooster/"
+  },
+  {
+   "id": "life-close-to-market",
+   "type": "programme",
+   "label": "LIFE close-to-market projects",
+   "url": "https://cinea.ec.europa.eu/life/life-close-market-projects_en"
+  },
+  {
+   "id": "org:0d99c52f",
+   "type": "funder",
+   "label": "CINEA, European Commission (LIFE Programme)",
+   "url": null
+  },
+  {
+   "id": "sector:environment-climate",
+   "type": "sector",
+   "label": "Environment and climate",
+   "url": null
+  },
+  {
+   "id": "page:life-close-to-market",
+   "type": "official_page",
+   "label": "cinea.ec.europa.eu",
+   "url": "https://cinea.ec.europa.eu/life/life-close-market-projects_en"
+  },
+  {
+   "id": "sprind-your-project",
+   "type": "programme",
+   "label": "SPRIND: Your Project Proposal",
+   "url": "https://www.sprind.org/en/actions/your-project"
+  },
+  {
+   "id": "org:72729b28",
+   "type": "funder",
+   "label": "SPRIND (Federal Agency for Breakthrough Innovation), Germany",
+   "url": null
+  },
+  {
+   "id": "page:sprind-your-project",
+   "type": "official_page",
+   "label": "www.sprind.org",
+   "url": "https://www.sprind.org/en/actions/your-project"
+  },
+  {
+   "id": "exist-gruendungsstipendium",
+   "type": "programme",
+   "label": "EXIST Business Start-up Grant (EXIST Gruendungsstipendium)",
+   "url": "https://www.exist.de/EXIST/Navigation/EN/Start-upFunding/EXIST-Business-Start-up-Grant/exist-business-start-up-grant.html"
+  },
+  {
+   "id": "org:d60c6cf4",
+   "type": "funder",
+   "label": "EXIST, a start-up funding programme of the Federal Ministry for Economic Affairs and Energy, Germany",
+   "url": null
+  },
+  {
+   "id": "page:exist-gruendungsstipendium",
+   "type": "official_page",
+   "label": "www.exist.de",
+   "url": "https://www.exist.de/EXIST/Navigation/EN/Start-upFunding/EXIST-Business-Start-up-Grant/exist-business-start-up-grant.html"
+  },
+  {
+   "id": "innovate-uk-ktp",
+   "type": "programme",
+   "label": "Knowledge Transfer Partnerships",
+   "url": "https://www.ukri.org/councils/innovate-uk/guidance-for-applicants/guidance-for-specific-funds/knowledge-transfer-partnership-guidance/"
+  },
+  {
+   "id": "org:9f3bc69b",
+   "type": "funder",
+   "label": "Innovate UK, part of UK Research and Innovation",
+   "url": null
+  },
+  {
+   "id": "country:GB",
+   "type": "country",
+   "label": "United Kingdom",
+   "url": null
+  },
+  {
+   "id": "page:innovate-uk-ktp",
+   "type": "official_page",
+   "label": "www.ukri.org",
+   "url": "https://www.ukri.org/councils/innovate-uk/guidance-for-applicants/guidance-for-specific-funds/knowledge-transfer-partnership-guidance/"
+  },
+  {
+   "id": "seis",
+   "type": "programme",
+   "label": "Seed Enterprise Investment Scheme (SEIS)",
+   "url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-to-use-the-seed-enterprise-investment-scheme"
+  },
+  {
+   "id": "org:7913ea34",
+   "type": "funder",
+   "label": "HM Revenue and Customs",
+   "url": null
+  },
+  {
+   "id": "page:seis",
+   "type": "official_page",
+   "label": "www.gov.uk",
+   "url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-to-use-the-seed-enterprise-investment-scheme"
+  },
+  {
+   "id": "eis",
+   "type": "programme",
+   "label": "Enterprise Investment Scheme (EIS)",
+   "url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-for-the-enterprise-investment-scheme"
+  },
+  {
+   "id": "page:eis",
+   "type": "official_page",
+   "label": "www.gov.uk",
+   "url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-for-the-enterprise-investment-scheme"
+  },
+  {
+   "id": "invest-ni-support-for-start-ups",
+   "type": "programme",
+   "label": "Support for start-ups (Invest NI)",
+   "url": "https://www.investni.com/support-for-business/support-for-start-ups"
+  },
+  {
+   "id": "org:69c07ae0",
+   "type": "funder",
+   "label": "Invest Northern Ireland",
+   "url": null
+  },
+  {
+   "id": "country:GB-NIR",
+   "type": "country",
+   "label": "Northern Ireland",
+   "url": null
+  },
+  {
+   "id": "sector:advanced-manufacturing",
+   "type": "sector",
+   "label": "Advanced manufacturing",
+   "url": null
+  },
+  {
+   "id": "sector:financial-services",
+   "type": "sector",
+   "label": "Financial and professional services",
+   "url": null
+  },
+  {
+   "id": "page:invest-ni-support-for-start-ups",
+   "type": "official_page",
+   "label": "www.investni.com",
+   "url": "https://www.investni.com/support-for-business/support-for-start-ups"
+  },
+  {
+   "id": "agent:keeper",
+   "type": "agent",
+   "label": "startup-grants.a (keeper)",
+   "url": null
+  },
+  {
+   "id": "agent:fetch",
+   "type": "agent",
+   "label": "web-fetch sub-agents",
+   "url": null
+  },
+  {
+   "id": "lead:notion",
+   "type": "lead",
+   "label": "Notion starting list",
+   "url": "https://humble-lantern-cdb.notion.site/e00ec34ecf5a44699910c36cf9e23c93?v=62ed8ff847c4409da264b1f156c9efd4"
+  },
+  {
+   "id": "lead:report",
+   "type": "lead",
+   "label": "ChatGPT research brief (lead only)",
+   "url": null
+  },
+  {
+   "id": "xcheck:promptugal",
+   "type": "cross_check",
+   "label": "PrompTugal News Startups data",
+   "url": "https://github.com/PrompTugal/PrompTugal__News__Startups"
+  }
+ ],
+ "edges": [
+  {
+   "source": "org:f701c7c1",
+   "target": "innosuisse-start-up-innovation-projects",
+   "rel": "funds"
+  },
+  {
+   "source": "innosuisse-start-up-innovation-projects",
+   "target": "country:CH",
+   "rel": "open_to"
+  },
+  {
+   "source": "innosuisse-start-up-innovation-projects",
+   "target": "stage:early-stage",
+   "rel": "suits"
+  },
+  {
+   "source": "innosuisse-start-up-innovation-projects",
+   "target": "sector:any",
+   "rel": "covers"
+  },
+  {
+   "source": "page:innosuisse-start-up-innovation-projects",
+   "target": "innosuisse-start-up-innovation-projects",
+   "rel": "written_from"
+  },
+  {
+   "source": "org:302ea5e1",
+   "target": "go-bio-next",
+   "rel": "funds"
+  },
+  {
+   "source": "go-bio-next",
+   "target": "country:DE",
+   "rel": "open_to"
+  },
+  {
+   "source": "go-bio-next",
+   "target": "stage:research",
+   "rel": "suits"
+  },
+  {
+   "source": "go-bio-next",
+   "target": "stage:early-stage",
+   "rel": "suits"
+  },
+  {
+   "source": "go-bio-next",
+   "target": "sector:life-sciences",
+   "rel": "covers"
+  },
+  {
+   "source": "page:go-bio-next",
+   "target": "go-bio-next",
+   "rel": "written_from"
+  },
+  {
+   "source": "org:7a88f18e",
+   "target": "women-tech-eu",
+   "rel": "funds"
+  },
+  {
+   "source": "women-tech-eu",
+   "target": "country:EU",
+   "rel": "open_to"
+  },
+  {
+   "source": "women-tech-eu",
+   "target": "stage:early-stage",
+   "rel": "suits"
+  },
+  {
+   "source": "women-tech-eu",
+   "target": "sector:deep-tech",
+   "rel": "covers"
+  },
+  {
+   "source": "page:women-tech-eu",
+   "target": "women-tech-eu",
+   "rel": "written_from"
+  },
+  {
+   "source": "org:6add8ff2",
+   "target": "eic-pathfinder",
+   "rel": "funds"
+  },
+  {
+   "source": "eic-pathfinder",
+   "target": "country:EU",
+   "rel": "open_to"
+  },
+  {
+   "source": "eic-pathfinder",
+   "target": "stage:research",
+   "rel": "suits"
+  },
+  {
+   "source": "eic-pathfinder",
+   "target": "sector:deep-tech",
+   "rel": "covers"
+  },
+  {
+   "source": "page:eic-pathfinder",
+   "target": "eic-pathfinder",
+   "rel": "written_from"
+  },
+  {
+   "source": "org:6add8ff2",
+   "target": "eic-accelerator",
+   "rel": "funds"
+  },
+  {
+   "source": "eic-accelerator",
+   "target": "country:EU",
+   "rel": "open_to"
+  },
+  {
+   "source": "eic-accelerator",
+   "target": "stage:early-stage",
+   "rel": "suits"
+  },
+  {
+   "source": "eic-accelerator",
+   "target": "stage:scale-up",
+   "rel": "suits"
+  },
+  {
+   "source": "eic-accelerator",
+   "target": "sector:any",
+   "rel": "covers"
+  },
+  {
+   "source": "page:eic-accelerator",
+   "target": "eic-accelerator",
+   "rel": "written_from"
+  },
+  {
+   "source": "org:6add8ff2",
+   "target": "eic-transition",
+   "rel": "funds"
+  },
+  {
+   "source": "eic-transition",
+   "target": "country:EU",
+   "rel": "open_to"
+  },
+  {
+   "source": "eic-transition",
+   "target": "stage:research",
+   "rel": "suits"
+  },
+  {
+   "source": "eic-transition",
+   "target": "stage:early-stage",
+   "rel": "suits"
+  },
+  {
+   "source": "eic-transition",
+   "target": "sector:any",
+   "rel": "covers"
+  },
+  {
+   "source": "page:eic-transition",
+   "target": "eic-transition",
+   "rel": "written_from"
+  },
+  {
+   "source": "org:f7188180",
+   "target": "aws-preseed-innovative-solutions",
+   "rel": "funds"
+  },
+  {
+   "source": "aws-preseed-innovative-solutions",
+   "target": "country:AT",
+   "rel": "open_to"
+  },
+  {
+   "source": "aws-preseed-innovative-solutions",
+   "target": "stage:pre-seed",
+   "rel": "suits"
+  },
+  {
+   "source": "aws-preseed-innovative-solutions",
+   "target": "stage:early-stage",
+   "rel": "suits"
+  },
+  {
+   "source": "aws-preseed-innovative-solutions",
+   "target": "sector:any",
+   "rel": "covers"
+  },
+  {
+   "source": "page:aws-preseed-innovative-solutions",
+   "target": "aws-preseed-innovative-solutions",
+   "rel": "written_from"
+  },
+  {
+   "source": "org:c49fa14c",
+   "target": "erc-starting-grant",
+   "rel": "funds"
+  },
+  {
+   "source": "erc-starting-grant",
+   "target": "country:EU",
+   "rel": "open_to"
+  },
+  {
+   "source": "erc-starting-grant",
+   "target": "stage:research",
+   "rel": "suits"
+  },
+  {
+   "source": "erc-starting-grant",
+   "target": "sector:any",
+   "rel": "covers"
+  },
+  {
+   "source": "page:erc-starting-grant",
+   "target": "erc-starting-grant",
+   "rel": "written_from"
+  },
+  {
+   "source": "org:cd43a5d8",
+   "target": "innobooster",
+   "rel": "funds"
+  },
+  {
+   "source": "innobooster",
+   "target": "country:DK",
+   "rel": "open_to"
+  },
+  {
+   "source": "innobooster",
+   "target": "stage:early-stage",
+   "rel": "suits"
+  },
+  {
+   "source": "innobooster",
+   "target": "stage:sme",
+   "rel": "suits"
+  },
+  {
+   "source": "innobooster",
+   "target": "sector:green-tech",
+   "rel": "covers"
+  },
+  {
+   "source": "innobooster",
+   "target": "sector:life-sciences",
+   "rel": "covers"
+  },
+  {
+   "source": "innobooster",
+   "target": "sector:digital",
+   "rel": "covers"
+  },
+  {
+   "source": "innobooster",
+   "target": "sector:defence-security",
+   "rel": "covers"
+  },
+  {
+   "source": "page:innobooster",
+   "target": "innobooster",
+   "rel": "written_from"
+  },
+  {
+   "source": "org:0d99c52f",
+   "target": "life-close-to-market",
+   "rel": "funds"
+  },
+  {
+   "source": "life-close-to-market",
+   "target": "country:EU",
+   "rel": "open_to"
+  },
+  {
+   "source": "life-close-to-market",
+   "target": "stage:scale-up",
+   "rel": "suits"
+  },
+  {
+   "source": "life-close-to-market",
+   "target": "stage:sme",
+   "rel": "suits"
+  },
+  {
+   "source": "life-close-to-market",
+   "target": "sector:green-tech",
+   "rel": "covers"
+  },
+  {
+   "source": "life-close-to-market",
+   "target": "sector:environment-climate",
+   "rel": "covers"
+  },
+  {
+   "source": "page:life-close-to-market",
+   "target": "life-close-to-market",
+   "rel": "written_from"
+  },
+  {
+   "source": "org:72729b28",
+   "target": "sprind-your-project",
+   "rel": "funds"
+  },
+  {
+   "source": "sprind-your-project",
+   "target": "country:DE",
+   "rel": "open_to"
+  },
+  {
+   "source": "sprind-your-project",
+   "target": "stage:research",
+   "rel": "suits"
+  },
+  {
+   "source": "sprind-your-project",
+   "target": "sector:any",
+   "rel": "covers"
+  },
+  {
+   "source": "page:sprind-your-project",
+   "target": "sprind-your-project",
+   "rel": "written_from"
+  },
+  {
+   "source": "org:d60c6cf4",
+   "target": "exist-gruendungsstipendium",
+   "rel": "funds"
+  },
+  {
+   "source": "exist-gruendungsstipendium",
+   "target": "country:DE",
+   "rel": "open_to"
+  },
+  {
+   "source": "exist-gruendungsstipendium",
+   "target": "stage:pre-seed",
+   "rel": "suits"
+  },
+  {
+   "source": "exist-gruendungsstipendium",
+   "target": "stage:research",
+   "rel": "suits"
+  },
+  {
+   "source": "exist-gruendungsstipendium",
+   "target": "sector:any",
+   "rel": "covers"
+  },
+  {
+   "source": "page:exist-gruendungsstipendium",
+   "target": "exist-gruendungsstipendium",
+   "rel": "written_from"
+  },
+  {
+   "source": "org:9f3bc69b",
+   "target": "innovate-uk-ktp",
+   "rel": "funds"
+  },
+  {
+   "source": "innovate-uk-ktp",
+   "target": "country:GB",
+   "rel": "open_to"
+  },
+  {
+   "source": "innovate-uk-ktp",
+   "target": "stage:sme",
+   "rel": "suits"
+  },
+  {
+   "source": "innovate-uk-ktp",
+   "target": "stage:scale-up",
+   "rel": "suits"
+  },
+  {
+   "source": "innovate-uk-ktp",
+   "target": "sector:any",
+   "rel": "covers"
+  },
+  {
+   "source": "page:innovate-uk-ktp",
+   "target": "innovate-uk-ktp",
+   "rel": "written_from"
+  },
+  {
+   "source": "org:7913ea34",
+   "target": "seis",
+   "rel": "funds"
+  },
+  {
+   "source": "seis",
+   "target": "country:GB",
+   "rel": "open_to"
+  },
+  {
+   "source": "seis",
+   "target": "stage:pre-seed",
+   "rel": "suits"
+  },
+  {
+   "source": "seis",
+   "target": "stage:early-stage",
+   "rel": "suits"
+  },
+  {
+   "source": "seis",
+   "target": "sector:any",
+   "rel": "covers"
+  },
+  {
+   "source": "page:seis",
+   "target": "seis",
+   "rel": "written_from"
+  },
+  {
+   "source": "org:7913ea34",
+   "target": "eis",
+   "rel": "funds"
+  },
+  {
+   "source": "eis",
+   "target": "country:GB",
+   "rel": "open_to"
+  },
+  {
+   "source": "eis",
+   "target": "stage:early-stage",
+   "rel": "suits"
+  },
+  {
+   "source": "eis",
+   "target": "stage:sme",
+   "rel": "suits"
+  },
+  {
+   "source": "eis",
+   "target": "stage:scale-up",
+   "rel": "suits"
+  },
+  {
+   "source": "eis",
+   "target": "sector:any",
+   "rel": "covers"
+  },
+  {
+   "source": "page:eis",
+   "target": "eis",
+   "rel": "written_from"
+  },
+  {
+   "source": "org:69c07ae0",
+   "target": "invest-ni-support-for-start-ups",
+   "rel": "funds"
+  },
+  {
+   "source": "invest-ni-support-for-start-ups",
+   "target": "country:GB-NIR",
+   "rel": "open_to"
+  },
+  {
+   "source": "invest-ni-support-for-start-ups",
+   "target": "stage:early-stage",
+   "rel": "suits"
+  },
+  {
+   "source": "invest-ni-support-for-start-ups",
+   "target": "sector:advanced-manufacturing",
+   "rel": "covers"
+  },
+  {
+   "source": "invest-ni-support-for-start-ups",
+   "target": "sector:digital",
+   "rel": "covers"
+  },
+  {
+   "source": "invest-ni-support-for-start-ups",
+   "target": "sector:life-sciences",
+   "rel": "covers"
+  },
+  {
+   "source": "invest-ni-support-for-start-ups",
+   "target": "sector:financial-services",
+   "rel": "covers"
+  },
+  {
+   "source": "invest-ni-support-for-start-ups",
+   "target": "sector:green-tech",
+   "rel": "covers"
+  },
+  {
+   "source": "page:invest-ni-support-for-start-ups",
+   "target": "invest-ni-support-for-start-ups",
+   "rel": "written_from"
+  },
+  {
+   "source": "agent:fetch",
+   "target": "page:innosuisse-start-up-innovation-projects",
+   "rel": "read"
+  },
+  {
+   "source": "agent:keeper",
+   "target": "innosuisse-start-up-innovation-projects",
+   "rel": "wrote"
+  },
+  {
+   "source": "lead:notion",
+   "target": "innosuisse-start-up-innovation-projects",
+   "rel": "named_by"
+  },
+  {
+   "source": "agent:fetch",
+   "target": "page:go-bio-next",
+   "rel": "read"
+  },
+  {
+   "source": "agent:keeper",
+   "target": "go-bio-next",
+   "rel": "wrote"
+  },
+  {
+   "source": "lead:notion",
+   "target": "go-bio-next",
+   "rel": "named_by"
+  },
+  {
+   "source": "agent:fetch",
+   "target": "page:women-tech-eu",
+   "rel": "read"
+  },
+  {
+   "source": "agent:keeper",
+   "target": "women-tech-eu",
+   "rel": "wrote"
+  },
+  {
+   "source": "lead:notion",
+   "target": "women-tech-eu",
+   "rel": "named_by"
+  },
+  {
+   "source": "xcheck:promptugal",
+   "target": "women-tech-eu",
+   "rel": "agrees_with"
+  },
+  {
+   "source": "agent:fetch",
+   "target": "page:eic-pathfinder",
+   "rel": "read"
+  },
+  {
+   "source": "agent:keeper",
+   "target": "eic-pathfinder",
+   "rel": "wrote"
+  },
+  {
+   "source": "lead:notion",
+   "target": "eic-pathfinder",
+   "rel": "named_by"
+  },
+  {
+   "source": "xcheck:promptugal",
+   "target": "eic-pathfinder",
+   "rel": "agrees_with"
+  },
+  {
+   "source": "agent:fetch",
+   "target": "page:eic-accelerator",
+   "rel": "read"
+  },
+  {
+   "source": "agent:keeper",
+   "target": "eic-accelerator",
+   "rel": "wrote"
+  },
+  {
+   "source": "lead:notion",
+   "target": "eic-accelerator",
+   "rel": "named_by"
+  },
+  {
+   "source": "xcheck:promptugal",
+   "target": "eic-accelerator",
+   "rel": "agrees_with"
+  },
+  {
+   "source": "agent:fetch",
+   "target": "page:eic-transition",
+   "rel": "read"
+  },
+  {
+   "source": "agent:keeper",
+   "target": "eic-transition",
+   "rel": "wrote"
+  },
+  {
+   "source": "lead:notion",
+   "target": "eic-transition",
+   "rel": "named_by"
+  },
+  {
+   "source": "xcheck:promptugal",
+   "target": "eic-transition",
+   "rel": "agrees_with"
+  },
+  {
+   "source": "agent:fetch",
+   "target": "page:aws-preseed-innovative-solutions",
+   "rel": "read"
+  },
+  {
+   "source": "agent:keeper",
+   "target": "aws-preseed-innovative-solutions",
+   "rel": "wrote"
+  },
+  {
+   "source": "lead:notion",
+   "target": "aws-preseed-innovative-solutions",
+   "rel": "named_by"
+  },
+  {
+   "source": "agent:fetch",
+   "target": "page:erc-starting-grant",
+   "rel": "read"
+  },
+  {
+   "source": "agent:keeper",
+   "target": "erc-starting-grant",
+   "rel": "wrote"
+  },
+  {
+   "source": "lead:notion",
+   "target": "erc-starting-grant",
+   "rel": "named_by"
+  },
+  {
+   "source": "agent:fetch",
+   "target": "page:innobooster",
+   "rel": "read"
+  },
+  {
+   "source": "agent:keeper",
+   "target": "innobooster",
+   "rel": "wrote"
+  },
+  {
+   "source": "lead:notion",
+   "target": "innobooster",
+   "rel": "named_by"
+  },
+  {
+   "source": "agent:fetch",
+   "target": "page:life-close-to-market",
+   "rel": "read"
+  },
+  {
+   "source": "agent:keeper",
+   "target": "life-close-to-market",
+   "rel": "wrote"
+  },
+  {
+   "source": "lead:notion",
+   "target": "life-close-to-market",
+   "rel": "named_by"
+  },
+  {
+   "source": "agent:fetch",
+   "target": "page:sprind-your-project",
+   "rel": "read"
+  },
+  {
+   "source": "agent:keeper",
+   "target": "sprind-your-project",
+   "rel": "wrote"
+  },
+  {
+   "source": "lead:notion",
+   "target": "sprind-your-project",
+   "rel": "named_by"
+  },
+  {
+   "source": "agent:fetch",
+   "target": "page:exist-gruendungsstipendium",
+   "rel": "read"
+  },
+  {
+   "source": "agent:keeper",
+   "target": "exist-gruendungsstipendium",
+   "rel": "wrote"
+  },
+  {
+   "source": "lead:notion",
+   "target": "exist-gruendungsstipendium",
+   "rel": "named_by"
+  },
+  {
+   "source": "agent:fetch",
+   "target": "page:innovate-uk-ktp",
+   "rel": "read"
+  },
+  {
+   "source": "agent:keeper",
+   "target": "innovate-uk-ktp",
+   "rel": "wrote"
+  },
+  {
+   "source": "agent:fetch",
+   "target": "page:seis",
+   "rel": "read"
+  },
+  {
+   "source": "agent:keeper",
+   "target": "seis",
+   "rel": "wrote"
+  },
+  {
+   "source": "agent:fetch",
+   "target": "page:eis",
+   "rel": "read"
+  },
+  {
+   "source": "agent:keeper",
+   "target": "eis",
+   "rel": "wrote"
+  },
+  {
+   "source": "agent:fetch",
+   "target": "page:invest-ni-support-for-start-ups",
+   "rel": "read"
+  },
+  {
+   "source": "agent:keeper",
+   "target": "invest-ni-support-for-start-ups",
+   "rel": "wrote"
+  }
+ ]
+}

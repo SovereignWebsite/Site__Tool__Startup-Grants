@@ -1,8 +1,8 @@
 {
- "schema_version": "1.0",
+ "schema_version": "1.1",
  "title": "Startup grants in Europe and the UK",
  "generated": "2026-11-25",
- "licence_note": "Each entry is written by the site's keeper from the programme's own official page. Reuse the data freely and keep the official_url and date_checked with each entry.",
+ "licence_note": "The keeper's text and structure are CC BY 4.0. Each entry links to the official page it was written from, which keeps its own terms. Keep official_url and date_checked with any entry you reuse.",
  "schema_doc": "https://startup-grants.tool.sovereignweb.site/data/SCHEMA.md",
  "credits": {
   "starting_list": {
@@ -38,6 +38,20 @@
    "EU": "EU-wide",
    "GB": "United Kingdom",
    "GB-NIR": "Northern Ireland"
+  },
+  "criteria_types": {
+   "country_in": "Registered or located in one of the listed places",
+   "age_years_max": "Company no older than this many years",
+   "age_months_max": "Company no older than this many months (may be before incorporation if allow_pre_incorporation)",
+   "age_months_between": "Company age in months between min and max",
+   "fte_lt": "Fewer full-time equivalent staff than this",
+   "gross_assets_le_gbp": "Gross assets no more than this, in pounds",
+   "trl_between": "Technology readiness level between min and max",
+   "equity_raised_lt_eur": "Equity raised so far below this, in euros",
+   "women_led": "Founded or co-founded by a woman in a top management role (the page also sets a share)",
+   "sector_in": "Sector is one of the listed",
+   "sector_not": "Sector is not one of the listed",
+   "text_only": "Stated on the page but not machine-checkable; shown for the reader to judge"
   }
  },
  "programmes": [
@@ -67,7 +81,42 @@
    "further_official_urls": [],
    "date_checked": "2026-11-25",
    "notes": "Page lists five thematic subgroups: ICT, energy and environment, engineering, life sciences, social sciences and business management.",
-   "in_starting_list": true
+   "in_starting_list": true,
+   "criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "CH"
+     ],
+     "text": "Headquarters in Switzerland and entered in the Swiss commercial register."
+    },
+    {
+     "type": "age_years_max",
+     "value": 5,
+     "text": "Not more than five years old when you apply (up to ten in exceptional cases)."
+    },
+    {
+     "type": "fte_lt",
+     "value": 50,
+     "text": "Fewer than 50 full-time equivalent staff."
+    }
+   ],
+   "provenance": {
+    "source_url": "https://www.innosuisse.admin.ch/en/start-up-innovation-projects",
+    "further_source_urls": [],
+    "read_on": "2026-11-25",
+    "file": "site/data/grants.json",
+    "file_url": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants/blob/dev/site/data/grants.json",
+    "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
+    "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+    "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page.",
+    "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
+    "source_license": {
+     "licence": "not checked yet",
+     "from": "no record"
+    },
+    "cross_check": null
+   }
   },
   {
    "id": "go-bio-next",
@@ -98,7 +147,39 @@
    "further_official_urls": [],
    "date_checked": "2026-11-25",
    "notes": "Administered through Projekttraeger Juelich according to the contact details on the page.",
-   "in_starting_list": true
+   "in_starting_list": true,
+   "criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "DE"
+     ],
+     "text": "Phase 1 is for research teams at German universities or research institutions."
+    },
+    {
+     "type": "sector_in",
+     "values": [
+      "life-sciences"
+     ],
+     "text": "Life sciences; agricultural, food and nutrition research is excluded."
+    }
+   ],
+   "provenance": {
+    "source_url": "https://www.go-bio.de/gobio/en/go-bio/go-bio-next/go-bio-next.html",
+    "further_source_urls": [],
+    "read_on": "2026-11-25",
+    "file": "site/data/grants.json",
+    "file_url": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants/blob/dev/site/data/grants.json",
+    "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
+    "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+    "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page.",
+    "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
+    "source_license": {
+     "licence": "not checked yet",
+     "from": "no record"
+    },
+    "cross_check": null
+   }
   },
   {
    "id": "women-tech-eu",
@@ -128,7 +209,50 @@
    "further_official_urls": [],
    "date_checked": "2026-11-25",
    "notes": "Programme budget stated as EUR 12 million in grants over 2026 to 2028.",
-   "in_starting_list": true
+   "in_starting_list": true,
+   "criteria": [
+    {
+     "type": "women_led",
+     "text": "Founded or co-founded by a woman in a top management role, with women holding at least 25 per cent of the shares."
+    },
+    {
+     "type": "age_months_between",
+     "min": 6,
+     "max": 60,
+     "text": "Registered for at least six months and no more than five years."
+    },
+    {
+     "type": "trl_between",
+     "min": 4,
+     "max": 6,
+     "text": "Technology readiness level 4 to 6."
+    },
+    {
+     "type": "equity_raised_lt_eur",
+     "value": 1000000,
+     "text": "Less than EUR 1 million equity raised."
+    },
+    {
+     "type": "text_only",
+     "text": "Registered in an EU Member State or Horizon Europe associated country, as the programme's FAQ lists them."
+    }
+   ],
+   "provenance": {
+    "source_url": "https://womentecheurope.eu/",
+    "further_source_urls": [],
+    "read_on": "2026-11-25",
+    "file": "site/data/grants.json",
+    "file_url": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants/blob/dev/site/data/grants.json",
+    "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
+    "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+    "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page.",
+    "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
+    "source_license": {
+     "licence": "not checked yet",
+     "from": "no record"
+    },
+    "cross_check": "Agrees: EUR 75,000 per company (there from the EISMEA programmes page; here from womentecheurope.eu)."
+   }
   },
   {
    "id": "eic-pathfinder",
@@ -160,7 +284,37 @@
    "further_official_urls": [],
    "date_checked": "2026-11-25",
    "notes": "Page states 2027 budgets of EUR 82 million (Challenges) and EUR 166 million (Open).",
-   "in_starting_list": true
+   "in_starting_list": true,
+   "criteria": [
+    {
+     "type": "trl_between",
+     "min": 1,
+     "max": 4,
+     "text": "Technology readiness level 1 to 4."
+    },
+    {
+     "type": "text_only",
+     "text": "Needs a consortium of at least three independent legal entities in different countries (single applicants only for Pathfinder Challenges). Aimed at research teams, not companies."
+    }
+   ],
+   "provenance": {
+    "source_url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en",
+    "further_source_urls": [],
+    "read_on": "2026-11-25",
+    "file": "site/data/grants.json",
+    "file_url": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants/blob/dev/site/data/grants.json",
+    "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
+    "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+    "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page.",
+    "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
+    "source_license": {
+     "licence": "CC BY 4.0, under Commission Decision 2011/833/EU",
+     "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+     "terms_url": "https://commission.europa.eu/legal-notice_en",
+     "from": "PrompTugal data/source-licences.json (read 2026-11-18)"
+    },
+    "cross_check": "Listed there with no amount; same address."
+   }
   },
   {
    "id": "eic-accelerator",
@@ -194,7 +348,37 @@
    "further_official_urls": [],
    "date_checked": "2026-11-25",
    "notes": "The page says both 3 steps and 4 steps for the process.",
-   "in_starting_list": true
+   "in_starting_list": true,
+   "criteria": [
+    {
+     "type": "trl_between",
+     "min": 6,
+     "max": 8,
+     "text": "Technology readiness level 6 to 8 for grants (6 to 9 for investment)."
+    },
+    {
+     "type": "text_only",
+     "text": "Start-up or SME in an EU Member State or associated country; small mid-caps (up to 499 staff) for investment only."
+    }
+   ],
+   "provenance": {
+    "source_url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
+    "further_source_urls": [],
+    "read_on": "2026-11-25",
+    "file": "site/data/grants.json",
+    "file_url": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants/blob/dev/site/data/grants.json",
+    "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
+    "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+    "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page.",
+    "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
+    "source_license": {
+     "licence": "CC BY 4.0, under Commission Decision 2011/833/EU",
+     "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+     "terms_url": "https://commission.europa.eu/legal-notice_en",
+     "from": "PrompTugal data/source-licences.json (read 2026-11-18)"
+    },
+    "cross_check": "Agrees: grant up to EUR 2.5 million plus EUR 1 million to EUR 10 million; batching dates 20 January, 17 March, 1 September and 4 November 2027."
+   }
   },
   {
    "id": "eic-transition",
@@ -225,7 +409,37 @@
    "further_official_urls": [],
    "date_checked": "2026-11-25",
    "notes": "The page says the 2026 list of eligible projects applies and a 2027 list is being prepared.",
-   "in_starting_list": true
+   "in_starting_list": true,
+   "criteria": [
+    {
+     "type": "trl_between",
+     "min": 4,
+     "max": 9,
+     "text": "Starts at technology readiness level 4, aiming for 5 or preferably 6."
+    },
+    {
+     "type": "text_only",
+     "text": "Must build on results of an eligible earlier project (for example EIC Pathfinder or ERC Proof of Concept)."
+    }
+   ],
+   "provenance": {
+    "source_url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-transition_en",
+    "further_source_urls": [],
+    "read_on": "2026-11-25",
+    "file": "site/data/grants.json",
+    "file_url": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants/blob/dev/site/data/grants.json",
+    "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
+    "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+    "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page.",
+    "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
+    "source_license": {
+     "licence": "CC BY 4.0, under Commission Decision 2011/833/EU",
+     "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+     "terms_url": "https://commission.europa.eu/legal-notice_en",
+     "from": "PrompTugal data/source-licences.json (read 2026-11-18)"
+    },
+    "cross_check": "Agrees: up to EUR 2.5 million per project; same address."
+   }
   },
   {
    "id": "aws-preseed-innovative-solutions",
@@ -256,7 +470,47 @@
    ],
    "date_checked": "2026-11-25",
    "notes": "Found through the hub page https://www.aws.at/en/aws-preseed-seedfinancing/, which lists the other aws lines (deep tech, seed financing) that this entry does not cover.",
-   "in_starting_list": true
+   "in_starting_list": true,
+   "criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "AT"
+     ],
+     "text": "Project located in Austria."
+    },
+    {
+     "type": "age_months_max",
+     "value": 6,
+     "allow_pre_incorporation": true,
+     "text": "Before incorporation, or no more than six months after entry in the commercial register."
+    },
+    {
+     "type": "sector_not",
+     "values": [
+      "deep-tech"
+     ],
+     "text": "Not deep tech (that has its own aws line)."
+    }
+   ],
+   "provenance": {
+    "source_url": "https://www.aws.at/en/aws-preseed-innovative-solutions/",
+    "further_source_urls": [
+     "https://www.aws.at/en/aws-preseed-seedfinancing/"
+    ],
+    "read_on": "2026-11-25",
+    "file": "site/data/grants.json",
+    "file_url": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants/blob/dev/site/data/grants.json",
+    "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
+    "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+    "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page. Also: hub page read first; its Innovative Solutions page read next, on the same domain.",
+    "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
+    "source_license": {
+     "licence": "not checked yet",
+     "from": "no record"
+    },
+    "cross_check": null
+   }
   },
   {
    "id": "erc-starting-grant",
@@ -284,7 +538,29 @@
    "further_official_urls": [],
    "date_checked": "2026-11-25",
    "notes": "Included because it is in the starting list; it suits researchers, not start-ups directly.",
-   "in_starting_list": true
+   "in_starting_list": true,
+   "criteria": [
+    {
+     "type": "text_only",
+     "text": "An individual researcher with 0 to 10 years since their PhD, hosted by an institution in an EU Member State or associated country. Not a company programme."
+    }
+   ],
+   "provenance": {
+    "source_url": "https://erc.europa.eu/apply-grant/starting-grant",
+    "further_source_urls": [],
+    "read_on": "2026-11-25",
+    "file": "site/data/grants.json",
+    "file_url": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants/blob/dev/site/data/grants.json",
+    "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
+    "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+    "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page.",
+    "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
+    "source_license": {
+     "licence": "not checked yet",
+     "from": "no record"
+    },
+    "cross_check": null
+   }
   },
   {
    "id": "innobooster",
@@ -318,7 +594,38 @@
    ],
    "date_checked": "2026-11-25",
    "notes": "The starting list's address, innovationsfonden.dk/en/p/innobooster, redirected here. The page lists four themes in one place and three in another (defence is missing from the second).",
-   "in_starting_list": true
+   "in_starting_list": true,
+   "criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "DK"
+     ],
+     "text": "Registered in Denmark with a CVR number."
+    },
+    {
+     "type": "text_only",
+     "text": "EU-definition SME with a financial foundation (risk capital or development grants of at least 100,000 in the past three years, or gross profit of at least DKK 250,000 in one of the past three published years)."
+    }
+   ],
+   "provenance": {
+    "source_url": "https://danmarksinnovationsfond.dk/en/programmes/innobooster/",
+    "further_source_urls": [
+     "https://innovationsfonden.dk/en/p/innobooster"
+    ],
+    "read_on": "2026-11-25",
+    "file": "site/data/grants.json",
+    "file_url": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants/blob/dev/site/data/grants.json",
+    "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
+    "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+    "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page. Also: the starting list's address redirected to a renamed domain, which was followed.",
+    "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
+    "source_license": {
+     "licence": "not checked yet",
+     "from": "no record"
+    },
+    "cross_check": null
+   }
   },
   {
    "id": "life-close-to-market",
@@ -350,7 +657,31 @@
    ],
    "date_checked": "2026-11-25",
    "notes": "Found through the hub page https://cinea.ec.europa.eu/programmes/life_en, which also links the current calls page.",
-   "in_starting_list": true
+   "in_starting_list": true,
+   "criteria": [
+    {
+     "type": "text_only",
+     "text": "Needs a high level of technical and business readiness and a business plan. Open to public authorities, NGOs, universities and companies."
+    }
+   ],
+   "provenance": {
+    "source_url": "https://cinea.ec.europa.eu/life/life-close-market-projects_en",
+    "further_source_urls": [
+     "https://cinea.ec.europa.eu/programmes/life_en"
+    ],
+    "read_on": "2026-11-25",
+    "file": "site/data/grants.json",
+    "file_url": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants/blob/dev/site/data/grants.json",
+    "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
+    "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+    "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page. Also: hub page read first; its close-to-market page read next, on the same domain.",
+    "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
+    "source_license": {
+     "licence": "not checked yet",
+     "from": "no record"
+    },
+    "cross_check": null
+   }
   },
   {
    "id": "sprind-your-project",
@@ -378,7 +709,29 @@
    "further_official_urls": [],
    "date_checked": "2026-11-25",
    "notes": "A route for submitting ideas rather than a grant programme with set terms.",
-   "in_starting_list": true
+   "in_starting_list": true,
+   "criteria": [
+    {
+     "type": "text_only",
+     "text": "A person with expert or scientific knowledge and a breakthrough idea. This is a way to submit an idea, not an application."
+    }
+   ],
+   "provenance": {
+    "source_url": "https://www.sprind.org/en/actions/your-project",
+    "further_source_urls": [],
+    "read_on": "2026-11-25",
+    "file": "site/data/grants.json",
+    "file_url": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants/blob/dev/site/data/grants.json",
+    "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
+    "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+    "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page.",
+    "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
+    "source_license": {
+     "licence": "not checked yet",
+     "from": "no record"
+    },
+    "cross_check": null
+   }
   },
   {
    "id": "exist-gruendungsstipendium",
@@ -407,7 +760,36 @@
    "further_official_urls": [],
    "date_checked": "2026-11-25",
    "notes": "The page states no amount or deadline. It is mostly in German. The address in the starting list returned 404, so this is the current official page found by search on exist.de; the application page itself has not been read.",
-   "in_starting_list": true
+   "in_starting_list": true,
+   "criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "DE"
+     ],
+     "text": "Programme of the German Federal Ministry for Economic Affairs and Energy."
+    },
+    {
+     "type": "text_only",
+     "text": "A founding idea from research and science in the pre-founding phase, with a link to a university or research institution."
+    }
+   ],
+   "provenance": {
+    "source_url": "https://www.exist.de/EXIST/Navigation/EN/Start-upFunding/EXIST-Business-Start-up-Grant/exist-business-start-up-grant.html",
+    "further_source_urls": [],
+    "read_on": "2026-11-25",
+    "file": "site/data/grants.json",
+    "file_url": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants/blob/dev/site/data/grants.json",
+    "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
+    "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+    "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page. Also: the starting list's address returned 404; the current official page was found by a web search limited to exist.de and then read.",
+    "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
+    "source_license": {
+     "licence": "not checked yet",
+     "from": "no record"
+    },
+    "cross_check": null
+   }
   },
   {
    "id": "innovate-uk-ktp",
@@ -443,7 +825,39 @@
    ],
    "date_checked": "2026-11-25",
    "notes": "In Northern Ireland the scheme is run with Invest NI.",
-   "in_starting_list": false
+   "in_starting_list": false,
+   "criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "GB"
+     ],
+     "text": "UK business (in Northern Ireland the scheme is run with Invest NI)."
+    },
+    {
+     "type": "text_only",
+     "text": "A business working with a university, college, research organisation or Catapult; full eligibility is on a page not yet read."
+    }
+   ],
+   "provenance": {
+    "source_url": "https://www.ukri.org/councils/innovate-uk/guidance-for-applicants/guidance-for-specific-funds/knowledge-transfer-partnership-guidance/",
+    "further_source_urls": [
+     "https://www.ukri.org/councils/innovate-uk/guidance-for-applicants/guidance-for-specific-funds/knowledge-transfer-partnership-guidance/dates-and-deadlines-for-ktp-applicants/",
+     "https://www.investni.com/support-for-business/innovation-support/innovate-uk-knowledge-transfer-partnerships"
+    ],
+    "read_on": "2026-11-25",
+    "file": "site/data/grants.json",
+    "file_url": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants/blob/dev/site/data/grants.json",
+    "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
+    "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+    "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page. Also: the guidance page and its costs and dates pages read; the gov.uk address redirects to ukri.org.",
+    "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
+    "source_license": {
+     "licence": "not checked yet",
+     "from": "no record"
+    },
+    "cross_check": null
+   }
   },
   {
    "id": "seis",
@@ -474,7 +888,48 @@
    ],
    "date_checked": "2026-11-25",
    "notes": "Page last updated 25 May 2023, according to the page. The address in further_official_urls is the earlier one, which now redirects here.",
-   "in_starting_list": false
+   "in_starting_list": false,
+   "criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "GB"
+     ],
+     "text": "Company established in the UK."
+    },
+    {
+     "type": "fte_lt",
+     "value": 25,
+     "text": "Fewer than 25 full-time equivalent staff."
+    },
+    {
+     "type": "gross_assets_le_gbp",
+     "value": 350000,
+     "text": "Gross assets of no more than GBP 350,000 when the shares are issued."
+    },
+    {
+     "type": "text_only",
+     "text": "A new qualifying trade. Not available if the company has had EIS or VCT investment. This is a tax relief for investors, not a grant."
+    }
+   ],
+   "provenance": {
+    "source_url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-to-use-the-seed-enterprise-investment-scheme",
+    "further_source_urls": [
+     "https://www.gov.uk/guidance/seed-enterprise-investment-scheme"
+    ],
+    "read_on": "2026-11-25",
+    "file": "site/data/grants.json",
+    "file_url": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants/blob/dev/site/data/grants.json",
+    "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
+    "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+    "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page. Also: read twice: first at the earlier gov.uk address, and again at the address it now redirects to.",
+    "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
+    "source_license": {
+     "licence": "not checked yet",
+     "from": "no record"
+    },
+    "cross_check": null
+   }
   },
   {
    "id": "eis",
@@ -504,7 +959,46 @@
    "further_official_urls": [],
    "date_checked": "2026-11-25",
    "notes": "Page last updated 6 April 2026, according to the page.",
-   "in_starting_list": false
+   "in_starting_list": false,
+   "criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "GB"
+     ],
+     "text": "Permanent establishment in the UK."
+    },
+    {
+     "type": "fte_lt",
+     "value": 250,
+     "text": "Fewer than 250 full-time equivalent staff."
+    },
+    {
+     "type": "gross_assets_le_gbp",
+     "value": 30000000,
+     "text": "Gross assets up to GBP 30 million before the shares are issued."
+    },
+    {
+     "type": "text_only",
+     "text": "Usually within seven years of first commercial sale; knowledge-intensive companies have different limits. A tax relief for investors, not a grant."
+    }
+   ],
+   "provenance": {
+    "source_url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-for-the-enterprise-investment-scheme",
+    "further_source_urls": [],
+    "read_on": "2026-11-25",
+    "file": "site/data/grants.json",
+    "file_url": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants/blob/dev/site/data/grants.json",
+    "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
+    "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+    "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page.",
+    "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
+    "source_license": {
+     "licence": "not checked yet",
+     "from": "no record"
+    },
+    "cross_check": null
+   }
   },
   {
    "id": "invest-ni-support-for-start-ups",
@@ -540,7 +1034,38 @@
    ],
    "date_checked": "2026-11-25",
    "notes": "Sector list is the page's list of priority sectors.",
-   "in_starting_list": false
+   "in_starting_list": false,
+   "criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "GB-NIR"
+     ],
+     "text": "Northern Ireland."
+    },
+    {
+     "type": "text_only",
+     "text": "New or early-stage business developing innovative products or tradeable services for customers outside Northern Ireland, with the ambition to grow quickly."
+    }
+   ],
+   "provenance": {
+    "source_url": "https://www.investni.com/support-for-business/support-for-start-ups",
+    "further_source_urls": [
+     "https://www.investni.com/"
+    ],
+    "read_on": "2026-11-25",
+    "file": "site/data/grants.json",
+    "file_url": "https://github.com/SovereignWebsite/Site__Tool__Startup-Grants/blob/dev/site/data/grants.json",
+    "read_by": "a web-fetch sub-agent started by the keeper (model not recorded)",
+    "written_by": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+    "how_read": "page text fetched and summarised by a web-fetch sub-agent started by the keeper (model not recorded); the keeper wrote this entry from that report and did not read the page itself. Amounts, rates and dates are short quotes from the page. Also: the start-up support page and the Invest NI home page read; two amounts come from linked cards, not their own pages.",
+    "license": "CC BY 4.0 for the keeper's text; the programme's own page keeps its own terms",
+    "source_license": {
+     "licence": "not checked yet",
+     "from": "no record"
+    },
+    "cross_check": null
+   }
   }
  ],
  "open_competitions": {
@@ -841,5 +1366,784 @@
    "starting_list_url": "https://www.scottish-enterprise.com/how-we-can-help/funding-and-grants/business-grants-and-funding-calls",
    "reason": "An index of grants and calls with no start-up programme stated; the research and development grants page is not yet read."
   }
- ]
+ ],
+ "sources": [
+  {
+   "id": "src-innosuisse-start-up-innovation-projects",
+   "url": "https://www.innosuisse.admin.ch/en/start-up-innovation-projects",
+   "host": "www.innosuisse.admin.ch",
+   "outcome": "read",
+   "programmes": [
+    "innosuisse-start-up-innovation-projects"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-go-bio-next",
+   "url": "https://www.go-bio.de/gobio/en/go-bio/go-bio-next/go-bio-next.html",
+   "host": "www.go-bio.de",
+   "outcome": "read",
+   "programmes": [
+    "go-bio-next"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-women-tech-eu",
+   "url": "https://womentecheurope.eu/",
+   "host": "womentecheurope.eu",
+   "outcome": "read",
+   "programmes": [
+    "women-tech-eu"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-eic-pathfinder",
+   "url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en",
+   "host": "eic.ec.europa.eu",
+   "outcome": "read",
+   "programmes": [
+    "eic-pathfinder"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "CC BY 4.0, under Commission Decision 2011/833/EU",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://commission.europa.eu/legal-notice_en",
+    "from": "PrompTugal data/source-licences.json (read 2026-11-18)"
+   }
+  },
+  {
+   "id": "src-eic-accelerator",
+   "url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
+   "host": "eic.ec.europa.eu",
+   "outcome": "read",
+   "programmes": [
+    "eic-accelerator"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "CC BY 4.0, under Commission Decision 2011/833/EU",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://commission.europa.eu/legal-notice_en",
+    "from": "PrompTugal data/source-licences.json (read 2026-11-18)"
+   }
+  },
+  {
+   "id": "src-eic-transition",
+   "url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-transition_en",
+   "host": "eic.ec.europa.eu",
+   "outcome": "read",
+   "programmes": [
+    "eic-transition"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "CC BY 4.0, under Commission Decision 2011/833/EU",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://commission.europa.eu/legal-notice_en",
+    "from": "PrompTugal data/source-licences.json (read 2026-11-18)"
+   }
+  },
+  {
+   "id": "src-aws-preseed-innovative-solutions",
+   "url": "https://www.aws.at/en/aws-preseed-innovative-solutions/",
+   "host": "www.aws.at",
+   "outcome": "read",
+   "programmes": [
+    "aws-preseed-innovative-solutions"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "hub page read first; its Innovative Solutions page read next, on the same domain",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-aws-preseed-innovative-solutions-2",
+   "url": "https://www.aws.at/en/aws-preseed-seedfinancing/",
+   "host": "www.aws.at",
+   "outcome": "read",
+   "programmes": [
+    "aws-preseed-innovative-solutions"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-erc-starting-grant",
+   "url": "https://erc.europa.eu/apply-grant/starting-grant",
+   "host": "erc.europa.eu",
+   "outcome": "read",
+   "programmes": [
+    "erc-starting-grant"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-innobooster",
+   "url": "https://danmarksinnovationsfond.dk/en/programmes/innobooster/",
+   "host": "danmarksinnovationsfond.dk",
+   "outcome": "read",
+   "programmes": [
+    "innobooster"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "the starting list's address redirected to a renamed domain, which was followed",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-innobooster-2",
+   "url": "https://innovationsfonden.dk/en/p/innobooster",
+   "host": "innovationsfonden.dk",
+   "outcome": "redirects to the address above",
+   "programmes": [
+    "innobooster"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-life-close-to-market",
+   "url": "https://cinea.ec.europa.eu/life/life-close-market-projects_en",
+   "host": "cinea.ec.europa.eu",
+   "outcome": "read",
+   "programmes": [
+    "life-close-to-market"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "hub page read first; its close-to-market page read next, on the same domain",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-life-close-to-market-2",
+   "url": "https://cinea.ec.europa.eu/programmes/life_en",
+   "host": "cinea.ec.europa.eu",
+   "outcome": "read",
+   "programmes": [
+    "life-close-to-market"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-sprind-your-project",
+   "url": "https://www.sprind.org/en/actions/your-project",
+   "host": "www.sprind.org",
+   "outcome": "read",
+   "programmes": [
+    "sprind-your-project"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-exist-gruendungsstipendium",
+   "url": "https://www.exist.de/EXIST/Navigation/EN/Start-upFunding/EXIST-Business-Start-up-Grant/exist-business-start-up-grant.html",
+   "host": "www.exist.de",
+   "outcome": "read",
+   "programmes": [
+    "exist-gruendungsstipendium"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "the starting list's address returned 404; the current official page was found by a web search limited to exist.de and then read",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-innovate-uk-ktp",
+   "url": "https://www.ukri.org/councils/innovate-uk/guidance-for-applicants/guidance-for-specific-funds/knowledge-transfer-partnership-guidance/",
+   "host": "www.ukri.org",
+   "outcome": "read",
+   "programmes": [
+    "innovate-uk-ktp"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "the guidance page and its costs and dates pages read; the gov.uk address redirects to ukri.org",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-innovate-uk-ktp-2",
+   "url": "https://www.ukri.org/councils/innovate-uk/guidance-for-applicants/guidance-for-specific-funds/knowledge-transfer-partnership-guidance/dates-and-deadlines-for-ktp-applicants/",
+   "host": "www.ukri.org",
+   "outcome": "read",
+   "programmes": [
+    "innovate-uk-ktp"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-innovate-uk-ktp-3",
+   "url": "https://www.investni.com/support-for-business/innovation-support/innovate-uk-knowledge-transfer-partnerships",
+   "host": "www.investni.com",
+   "outcome": "read",
+   "programmes": [
+    "innovate-uk-ktp"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-seis",
+   "url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-to-use-the-seed-enterprise-investment-scheme",
+   "host": "www.gov.uk",
+   "outcome": "read",
+   "programmes": [
+    "seis"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "read twice: first at the earlier gov.uk address, and again at the address it now redirects to",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-seis-2",
+   "url": "https://www.gov.uk/guidance/seed-enterprise-investment-scheme",
+   "host": "www.gov.uk",
+   "outcome": "redirects to the address above",
+   "programmes": [
+    "seis"
+   ],
+   "method": "checked with a redirect request (curl)",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-eis",
+   "url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-for-the-enterprise-investment-scheme",
+   "host": "www.gov.uk",
+   "outcome": "read",
+   "programmes": [
+    "eis"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-invest-ni-support-for-start-ups",
+   "url": "https://www.investni.com/support-for-business/support-for-start-ups",
+   "host": "www.investni.com",
+   "outcome": "read",
+   "programmes": [
+    "invest-ni-support-for-start-ups"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "the start-up support page and the Invest NI home page read; two amounts come from linked cards, not their own pages",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-invest-ni-support-for-start-ups-2",
+   "url": "https://www.investni.com/",
+   "host": "www.investni.com",
+   "outcome": "read",
+   "programmes": [
+    "invest-ni-support-for-start-ups"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-ifs",
+   "url": "https://apply-for-innovation-funding.service.gov.uk/competition/search",
+   "host": "apply-for-innovation-funding.service.gov.uk",
+   "outcome": "read",
+   "programmes": [
+    "open_competitions"
+   ],
+   "method": "fetched by a web-fetch sub-agent (three result pages)",
+   "read_on": "2026-11-25",
+   "note": "25 competitions; none marked closed or paused",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "src-ukri-opportunity",
+   "url": "https://www.ukri.org/opportunity/",
+   "host": "www.ukri.org",
+   "outcome": "read",
+   "programmes": [
+    "innovate-uk-ktp"
+   ],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "two open Innovate UK items seen; not used as programmes",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-french-tech-rise",
+   "url": "https://lafrenchtech.gouv.fr/en/programme/french-tech-rise-2/",
+   "host": "lafrenchtech.gouv.fr",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "The address in the starting list returned 404 Not Found when read on 25 November 2026. The Mission French Tech page found by search also redirects to a 404.",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-horizon-europe-clusters",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/programmes/horizon",
+   "host": "ec.europa.eu",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "The portal page returned only its title, with no programme text.",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-zim",
+   "url": "https://www.zim.de/ZIM/Navigation/DE/Meta/Englisch/englisch.html",
+   "host": "www.zim.de",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "The site showed a browser-verification page to the reader and gave no programme text.",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-vlaio-research-project",
+   "url": "https://www.vlaio.be/en/subsidies/research-project",
+   "host": "www.vlaio.be",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "The site refused the request (403).",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-innovasjon-norge-start-up-support",
+   "url": "https://en.innovasjonnorge.no/article/startups",
+   "host": "en.innovasjonnorge.no",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "The address redirected to a general home page, not the article.",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-exist-forschungstransfer",
+   "url": "https://exist.de/programm/exist-forschungstransfer/foerderantrag-stellen/",
+   "host": "exist.de",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "The address in the starting list returned 404 Not Found.",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-cdti-neotec",
+   "url": "https://www.cdti.es/en/ayudas/neotec",
+   "host": "www.cdti.es",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "The page returned no content to the reader.",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-eurostars",
+   "url": "https://www.eurekanetwork.org/programmes/eurostars/",
+   "host": "www.eurekanetwork.org",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "The site refused the request (403).",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-bpifrance-i-nov",
+   "url": "https://www.bpifrance.fr/nos-appels-a-projets-concours/appel-a-projets-concours-dinnovation-i-nov",
+   "host": "www.bpifrance.fr",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "The site refused the request (403).",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-i-lab-innovation-contest",
+   "url": "https://www.bpifrance.fr/nos-appels-a-projets-concours/concours-dinnovation-i-lab",
+   "host": "www.bpifrance.fr",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "The starting list links a news article, not an official page. The official pages found by search (Bpifrance and the research ministry) refused the request (403), so none is written up.",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-ffg-general-programme",
+   "url": "https://www.ffg.at/en/programme/general-programme",
+   "host": "www.ffg.at",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "The site refused the request (403).",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-vinnova-funding",
+   "url": "https://www.vinnova.se/en/apply-for-funding/",
+   "host": "www.vinnova.se",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "This is a hub of many calls, not one programme; individual calls are not yet read.",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-eit-opportunities",
+   "url": "https://www.eit.europa.eu/our-activities/opportunities",
+   "host": "www.eit.europa.eu",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "This is a hub of current calls; individual calls are not yet read.",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-esa-bic-booster-funding-opportunities",
+   "url": "https://booster.esa-bic.de/funding-opportunities/",
+   "host": "booster.esa-bic.de",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "This is a hub; the page states no amounts or deadlines and sends applicants to their ESA BIC.",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-eu-cascade-funding-fstp",
+   "url": "https://webgate.ec.europa.eu/funding-tenders-opportunities/spaces/IT/pages/25559615/Cascade+Funding+Calls+Financial+Support+for+Third+Parties+FSTP",
+   "host": "webgate.ec.europa.eu",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "A how-to guide for the portal, not a programme.",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-ukri-apply-for-funding",
+   "url": "https://www.ukri.org/apply-for-funding/",
+   "host": "www.ukri.org",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "A hub for all UKRI funding, not one programme.",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-start-up-loans",
+   "url": "https://www.startuploans.co.uk/",
+   "host": "www.startuploans.co.uk",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "The site refused the request (403).",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-scottish-enterprise-grants",
+   "url": "https://www.scottish-enterprise.com/how-we-can-help/funding-and-grants/business-grants-and-funding-calls",
+   "host": "www.scottish-enterprise.com",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "An index of grants and calls with no start-up programme stated; the research and development grants page is not yet read.",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-bpifrance-ilab-ministry",
+   "url": "https://www.enseignementsup-recherche.gouv.fr/fr/france-2030-lancement-de-la-27e-edition-du-concours-d-innovation-i-lab-98536",
+   "host": "www.enseignementsup-recherche.gouv.fr",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "refused the request (403)",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-british-business-bank",
+   "url": "https://www.british-business-bank.co.uk/",
+   "host": "www.british-business-bank.co.uk",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "refused the request (403)",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-development-bank-wales",
+   "url": "https://www.developmentbankofwales.com/",
+   "host": "www.developmentbankofwales.com",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "host could not be reached from the builder's network",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-lafrenchtech-com",
+   "url": "https://lafrenchtech.com/en/how-france-helps-startups/french-tech-rise-en/",
+   "host": "lafrenchtech.com",
+   "outcome": "not read",
+   "programmes": [],
+   "method": "fetched by a web-fetch sub-agent",
+   "read_on": "2026-11-25",
+   "note": "redirects to a lafrenchtech.gouv.fr address that returns 404",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "gap-browser-reread",
+   "url": "",
+   "host": "",
+   "outcome": "refused",
+   "programmes": [],
+   "method": "browser re-read of the blocked pages",
+   "read_on": "2026-11-25",
+   "note": "The session's permission check refused re-reading blocked pages in a browser. The keeper stopped and did not work round it.",
+   "license": null
+  },
+  {
+   "id": "lead-notion",
+   "url": "https://humble-lantern-cdb.notion.site/e00ec34ecf5a44699910c36cf9e23c93?v=62ed8ff847c4409da264b1f156c9efd4",
+   "host": "humble-lantern-cdb.notion.site",
+   "outcome": "starting list",
+   "programmes": "*",
+   "method": "read in a browser (Playwright) by the keeper",
+   "read_on": "2026-11-25",
+   "note": "29 programme names and official links taken; no descriptions or text copied",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  },
+  {
+   "id": "lead-chatgpt-report",
+   "url": "",
+   "host": "",
+   "outcome": "lead only",
+   "programmes": "*",
+   "method": "a PDF supplied by Dinis Cruz",
+   "read_on": "2026-11-25",
+   "note": "A research brief (ChatGPT, 8 pages) with a data model, a source registry and a pipeline. It says the Notion page is private; the page is in fact public and was read. Its citations were not checked. Used for ideas, never as a source of facts.",
+   "license": null
+  },
+  {
+   "id": "xcheck-promptugal-startups",
+   "url": "https://github.com/PrompTugal/PrompTugal__News__Startups/blob/dev/data/research/eu.json",
+   "host": "github.com",
+   "outcome": "cross-check",
+   "programmes": [
+    "eic-accelerator",
+    "eic-pathfinder",
+    "eic-transition",
+    "women-tech-eu"
+   ],
+   "method": "git clone (read only) by the keeper",
+   "read_on": "2026-11-25",
+   "note": "PrompTugal's own EU research, read 2026-11-21 by startups.b.eu@PrompTugal.dinis. Amounts and dates agree where both give them.",
+   "license": {
+    "licence": "not checked yet",
+    "from": "no record"
+   }
+  }
+ ],
+ "vault": {
+  "name": "Startup grants in Europe and the UK: data and provenance",
+  "vault_id": "req343ij",
+  "host": "dev.vault.sgraph.ai",
+  "created": "2026-11-25",
+  "status": "Created and readable with a read-only key. The address is not linked from this site yet: the site's leak scan blocks read keys, so publishing it is the owner's decision.",
+  "holds": "data/ (grants, sources, graph, linked data, schema), screenshots/, README.md and a page that shows the provenance"
+ }
 }

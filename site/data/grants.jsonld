@@ -1,0 +1,686 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "sg": "https://startup-grants.tool.sovereignweb.site/data/SCHEMA.md#"
+ },
+ "@graph": [
+  {
+   "@id": "https://startup-grants.tool.sovereignweb.site/#innosuisse-start-up-innovation-projects",
+   "@type": "MonetaryGrant",
+   "name": "Start-up Innovation Projects",
+   "url": "https://www.innosuisse.admin.ch/en/start-up-innovation-projects",
+   "funder": {
+    "@type": "Organization",
+    "name": "Innosuisse, the Swiss Innovation Agency"
+   },
+   "areaServed": [
+    "Switzerland"
+   ],
+   "sg:stages": [
+    "early-stage"
+   ],
+   "sg:sectors": [
+    "any"
+   ],
+   "sg:deadlineType": "rolling",
+   "sg:dateChecked": "2026-11-25",
+   "sg:criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "CH"
+     ],
+     "text": "Headquarters in Switzerland and entered in the Swiss commercial register."
+    },
+    {
+     "type": "age_years_max",
+     "value": 5,
+     "text": "Not more than five years old when you apply (up to ten in exceptional cases)."
+    },
+    {
+     "type": "fte_lt",
+     "value": 50,
+     "text": "Fewer than 50 full-time equivalent staff."
+    }
+   ],
+   "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
+   "sg:writtenBy": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+   "sg:sourceUrls": [
+    "https://www.innosuisse.admin.ch/en/start-up-innovation-projects"
+   ]
+  },
+  {
+   "@id": "https://startup-grants.tool.sovereignweb.site/#go-bio-next",
+   "@type": "MonetaryGrant",
+   "name": "GO-Bio next",
+   "url": "https://www.go-bio.de/gobio/en/go-bio/go-bio-next/go-bio-next.html",
+   "funder": {
+    "@type": "Organization",
+    "name": "Federal Ministry of Research, Technology and Space (BMFTR), Germany"
+   },
+   "areaServed": [
+    "Germany"
+   ],
+   "sg:stages": [
+    "research",
+    "early-stage"
+   ],
+   "sg:sectors": [
+    "life-sciences"
+   ],
+   "sg:deadlineType": "fixed",
+   "sg:dateChecked": "2026-11-25",
+   "sg:criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "DE"
+     ],
+     "text": "Phase 1 is for research teams at German universities or research institutions."
+    },
+    {
+     "type": "sector_in",
+     "values": [
+      "life-sciences"
+     ],
+     "text": "Life sciences; agricultural, food and nutrition research is excluded."
+    }
+   ],
+   "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
+   "sg:writtenBy": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+   "sg:sourceUrls": [
+    "https://www.go-bio.de/gobio/en/go-bio/go-bio-next/go-bio-next.html"
+   ]
+  },
+  {
+   "@id": "https://startup-grants.tool.sovereignweb.site/#women-tech-eu",
+   "@type": "MonetaryGrant",
+   "name": "Women TechEU",
+   "url": "https://womentecheurope.eu/",
+   "funder": {
+    "@type": "Organization",
+    "name": "EU-funded project run by a consortium; granting authority EISMEA"
+   },
+   "areaServed": [
+    "EU-wide"
+   ],
+   "sg:stages": [
+    "early-stage"
+   ],
+   "sg:sectors": [
+    "deep-tech"
+   ],
+   "sg:deadlineType": "fixed",
+   "sg:dateChecked": "2026-11-25",
+   "sg:criteria": [
+    {
+     "type": "women_led",
+     "text": "Founded or co-founded by a woman in a top management role, with women holding at least 25 per cent of the shares."
+    },
+    {
+     "type": "age_months_between",
+     "min": 6,
+     "max": 60,
+     "text": "Registered for at least six months and no more than five years."
+    },
+    {
+     "type": "trl_between",
+     "min": 4,
+     "max": 6,
+     "text": "Technology readiness level 4 to 6."
+    },
+    {
+     "type": "equity_raised_lt_eur",
+     "value": 1000000,
+     "text": "Less than EUR 1 million equity raised."
+    },
+    {
+     "type": "text_only",
+     "text": "Registered in an EU Member State or Horizon Europe associated country, as the programme's FAQ lists them."
+    }
+   ],
+   "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
+   "sg:writtenBy": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+   "sg:sourceUrls": [
+    "https://womentecheurope.eu/"
+   ]
+  },
+  {
+   "@id": "https://startup-grants.tool.sovereignweb.site/#eic-pathfinder",
+   "@type": "MonetaryGrant",
+   "name": "EIC Pathfinder",
+   "url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en",
+   "funder": {
+    "@type": "Organization",
+    "name": "European Innovation Council, European Commission"
+   },
+   "areaServed": [
+    "EU-wide"
+   ],
+   "sg:stages": [
+    "research"
+   ],
+   "sg:sectors": [
+    "deep-tech"
+   ],
+   "sg:deadlineType": "fixed",
+   "sg:dateChecked": "2026-11-25",
+   "sg:criteria": [
+    {
+     "type": "trl_between",
+     "min": 1,
+     "max": 4,
+     "text": "Technology readiness level 1 to 4."
+    },
+    {
+     "type": "text_only",
+     "text": "Needs a consortium of at least three independent legal entities in different countries (single applicants only for Pathfinder Challenges). Aimed at research teams, not companies."
+    }
+   ],
+   "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
+   "sg:writtenBy": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+   "sg:sourceUrls": [
+    "https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder_en"
+   ]
+  },
+  {
+   "@id": "https://startup-grants.tool.sovereignweb.site/#eic-accelerator",
+   "@type": "MonetaryGrant",
+   "name": "EIC Accelerator",
+   "url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
+   "funder": {
+    "@type": "Organization",
+    "name": "European Innovation Council, European Commission"
+   },
+   "areaServed": [
+    "EU-wide"
+   ],
+   "sg:stages": [
+    "early-stage",
+    "scale-up"
+   ],
+   "sg:sectors": [
+    "any"
+   ],
+   "sg:deadlineType": "fixed",
+   "sg:dateChecked": "2026-11-25",
+   "sg:criteria": [
+    {
+     "type": "trl_between",
+     "min": 6,
+     "max": 8,
+     "text": "Technology readiness level 6 to 8 for grants (6 to 9 for investment)."
+    },
+    {
+     "type": "text_only",
+     "text": "Start-up or SME in an EU Member State or associated country; small mid-caps (up to 499 staff) for investment only."
+    }
+   ],
+   "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
+   "sg:writtenBy": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+   "sg:sourceUrls": [
+    "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en"
+   ]
+  },
+  {
+   "@id": "https://startup-grants.tool.sovereignweb.site/#eic-transition",
+   "@type": "MonetaryGrant",
+   "name": "EIC Transition",
+   "url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-transition_en",
+   "funder": {
+    "@type": "Organization",
+    "name": "European Innovation Council, European Commission"
+   },
+   "areaServed": [
+    "EU-wide"
+   ],
+   "sg:stages": [
+    "research",
+    "early-stage"
+   ],
+   "sg:sectors": [
+    "any"
+   ],
+   "sg:deadlineType": "fixed",
+   "sg:dateChecked": "2026-11-25",
+   "sg:criteria": [
+    {
+     "type": "trl_between",
+     "min": 4,
+     "max": 9,
+     "text": "Starts at technology readiness level 4, aiming for 5 or preferably 6."
+    },
+    {
+     "type": "text_only",
+     "text": "Must build on results of an eligible earlier project (for example EIC Pathfinder or ERC Proof of Concept)."
+    }
+   ],
+   "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
+   "sg:writtenBy": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+   "sg:sourceUrls": [
+    "https://eic.ec.europa.eu/eic-funding-opportunities/eic-transition_en"
+   ]
+  },
+  {
+   "@id": "https://startup-grants.tool.sovereignweb.site/#aws-preseed-innovative-solutions",
+   "@type": "MonetaryGrant",
+   "name": "aws Preseed: Innovative Solutions",
+   "url": "https://www.aws.at/en/aws-preseed-innovative-solutions/",
+   "funder": {
+    "@type": "Organization",
+    "name": "aws (Austria Wirtschaftsservice)"
+   },
+   "areaServed": [
+    "Austria"
+   ],
+   "sg:stages": [
+    "pre-seed",
+    "early-stage"
+   ],
+   "sg:sectors": [
+    "any"
+   ],
+   "sg:deadlineType": "rolling",
+   "sg:dateChecked": "2026-11-25",
+   "sg:criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "AT"
+     ],
+     "text": "Project located in Austria."
+    },
+    {
+     "type": "age_months_max",
+     "value": 6,
+     "allow_pre_incorporation": true,
+     "text": "Before incorporation, or no more than six months after entry in the commercial register."
+    },
+    {
+     "type": "sector_not",
+     "values": [
+      "deep-tech"
+     ],
+     "text": "Not deep tech (that has its own aws line)."
+    }
+   ],
+   "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
+   "sg:writtenBy": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+   "sg:sourceUrls": [
+    "https://www.aws.at/en/aws-preseed-innovative-solutions/",
+    "https://www.aws.at/en/aws-preseed-seedfinancing/"
+   ]
+  },
+  {
+   "@id": "https://startup-grants.tool.sovereignweb.site/#erc-starting-grant",
+   "@type": "MonetaryGrant",
+   "name": "ERC Starting Grant",
+   "url": "https://erc.europa.eu/apply-grant/starting-grant",
+   "funder": {
+    "@type": "Organization",
+    "name": "European Research Council"
+   },
+   "areaServed": [
+    "EU-wide"
+   ],
+   "sg:stages": [
+    "research"
+   ],
+   "sg:sectors": [
+    "any"
+   ],
+   "sg:deadlineType": "annual",
+   "sg:dateChecked": "2026-11-25",
+   "sg:criteria": [
+    {
+     "type": "text_only",
+     "text": "An individual researcher with 0 to 10 years since their PhD, hosted by an institution in an EU Member State or associated country. Not a company programme."
+    }
+   ],
+   "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
+   "sg:writtenBy": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+   "sg:sourceUrls": [
+    "https://erc.europa.eu/apply-grant/starting-grant"
+   ]
+  },
+  {
+   "@id": "https://startup-grants.tool.sovereignweb.site/#innobooster",
+   "@type": "MonetaryGrant",
+   "name": "Innobooster",
+   "url": "https://danmarksinnovationsfond.dk/en/programmes/innobooster/",
+   "funder": {
+    "@type": "Organization",
+    "name": "Innovation Fund Denmark"
+   },
+   "areaServed": [
+    "Denmark"
+   ],
+   "sg:stages": [
+    "early-stage",
+    "sme"
+   ],
+   "sg:sectors": [
+    "green-tech",
+    "life-sciences",
+    "digital",
+    "defence-security"
+   ],
+   "sg:deadlineType": "windows",
+   "sg:dateChecked": "2026-11-25",
+   "sg:criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "DK"
+     ],
+     "text": "Registered in Denmark with a CVR number."
+    },
+    {
+     "type": "text_only",
+     "text": "EU-definition SME with a financial foundation (risk capital or development grants of at least 100,000 in the past three years, or gross profit of at least DKK 250,000 in one of the past three published years)."
+    }
+   ],
+   "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
+   "sg:writtenBy": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+   "sg:sourceUrls": [
+    "https://danmarksinnovationsfond.dk/en/programmes/innobooster/",
+    "https://innovationsfonden.dk/en/p/innobooster"
+   ]
+  },
+  {
+   "@id": "https://startup-grants.tool.sovereignweb.site/#life-close-to-market",
+   "@type": "MonetaryGrant",
+   "name": "LIFE close-to-market projects",
+   "url": "https://cinea.ec.europa.eu/life/life-close-market-projects_en",
+   "funder": {
+    "@type": "Organization",
+    "name": "CINEA, European Commission (LIFE Programme)"
+   },
+   "areaServed": [
+    "EU-wide"
+   ],
+   "sg:stages": [
+    "scale-up",
+    "sme"
+   ],
+   "sg:sectors": [
+    "green-tech",
+    "environment-climate"
+   ],
+   "sg:deadlineType": "annual",
+   "sg:dateChecked": "2026-11-25",
+   "sg:criteria": [
+    {
+     "type": "text_only",
+     "text": "Needs a high level of technical and business readiness and a business plan. Open to public authorities, NGOs, universities and companies."
+    }
+   ],
+   "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
+   "sg:writtenBy": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+   "sg:sourceUrls": [
+    "https://cinea.ec.europa.eu/life/life-close-market-projects_en",
+    "https://cinea.ec.europa.eu/programmes/life_en"
+   ]
+  },
+  {
+   "@id": "https://startup-grants.tool.sovereignweb.site/#sprind-your-project",
+   "@type": "Thing",
+   "name": "SPRIND: Your Project Proposal",
+   "url": "https://www.sprind.org/en/actions/your-project",
+   "funder": {
+    "@type": "Organization",
+    "name": "SPRIND (Federal Agency for Breakthrough Innovation), Germany"
+   },
+   "areaServed": [
+    "Germany"
+   ],
+   "sg:stages": [
+    "research"
+   ],
+   "sg:sectors": [
+    "any"
+   ],
+   "sg:deadlineType": "not-stated",
+   "sg:dateChecked": "2026-11-25",
+   "sg:criteria": [
+    {
+     "type": "text_only",
+     "text": "A person with expert or scientific knowledge and a breakthrough idea. This is a way to submit an idea, not an application."
+    }
+   ],
+   "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
+   "sg:writtenBy": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+   "sg:sourceUrls": [
+    "https://www.sprind.org/en/actions/your-project"
+   ]
+  },
+  {
+   "@id": "https://startup-grants.tool.sovereignweb.site/#exist-gruendungsstipendium",
+   "@type": "MonetaryGrant",
+   "name": "EXIST Business Start-up Grant (EXIST Gruendungsstipendium)",
+   "url": "https://www.exist.de/EXIST/Navigation/EN/Start-upFunding/EXIST-Business-Start-up-Grant/exist-business-start-up-grant.html",
+   "funder": {
+    "@type": "Organization",
+    "name": "EXIST, a start-up funding programme of the Federal Ministry for Economic Affairs and Energy, Germany"
+   },
+   "areaServed": [
+    "Germany"
+   ],
+   "sg:stages": [
+    "pre-seed",
+    "research"
+   ],
+   "sg:sectors": [
+    "any"
+   ],
+   "sg:deadlineType": "not-stated",
+   "sg:dateChecked": "2026-11-25",
+   "sg:criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "DE"
+     ],
+     "text": "Programme of the German Federal Ministry for Economic Affairs and Energy."
+    },
+    {
+     "type": "text_only",
+     "text": "A founding idea from research and science in the pre-founding phase, with a link to a university or research institution."
+    }
+   ],
+   "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
+   "sg:writtenBy": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+   "sg:sourceUrls": [
+    "https://www.exist.de/EXIST/Navigation/EN/Start-upFunding/EXIST-Business-Start-up-Grant/exist-business-start-up-grant.html"
+   ]
+  },
+  {
+   "@id": "https://startup-grants.tool.sovereignweb.site/#innovate-uk-ktp",
+   "@type": "MonetaryGrant",
+   "name": "Knowledge Transfer Partnerships",
+   "url": "https://www.ukri.org/councils/innovate-uk/guidance-for-applicants/guidance-for-specific-funds/knowledge-transfer-partnership-guidance/",
+   "funder": {
+    "@type": "Organization",
+    "name": "Innovate UK, part of UK Research and Innovation"
+   },
+   "areaServed": [
+    "United Kingdom"
+   ],
+   "sg:stages": [
+    "sme",
+    "scale-up"
+   ],
+   "sg:sectors": [
+    "any"
+   ],
+   "sg:deadlineType": "fixed",
+   "sg:dateChecked": "2026-11-25",
+   "sg:criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "GB"
+     ],
+     "text": "UK business (in Northern Ireland the scheme is run with Invest NI)."
+    },
+    {
+     "type": "text_only",
+     "text": "A business working with a university, college, research organisation or Catapult; full eligibility is on a page not yet read."
+    }
+   ],
+   "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
+   "sg:writtenBy": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+   "sg:sourceUrls": [
+    "https://www.ukri.org/councils/innovate-uk/guidance-for-applicants/guidance-for-specific-funds/knowledge-transfer-partnership-guidance/",
+    "https://www.ukri.org/councils/innovate-uk/guidance-for-applicants/guidance-for-specific-funds/knowledge-transfer-partnership-guidance/dates-and-deadlines-for-ktp-applicants/",
+    "https://www.investni.com/support-for-business/innovation-support/innovate-uk-knowledge-transfer-partnerships"
+   ]
+  },
+  {
+   "@id": "https://startup-grants.tool.sovereignweb.site/#seis",
+   "@type": "Thing",
+   "name": "Seed Enterprise Investment Scheme (SEIS)",
+   "url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-to-use-the-seed-enterprise-investment-scheme",
+   "funder": {
+    "@type": "Organization",
+    "name": "HM Revenue and Customs"
+   },
+   "areaServed": [
+    "United Kingdom"
+   ],
+   "sg:stages": [
+    "pre-seed",
+    "early-stage"
+   ],
+   "sg:sectors": [
+    "any"
+   ],
+   "sg:deadlineType": "rolling",
+   "sg:dateChecked": "2026-11-25",
+   "sg:criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "GB"
+     ],
+     "text": "Company established in the UK."
+    },
+    {
+     "type": "fte_lt",
+     "value": 25,
+     "text": "Fewer than 25 full-time equivalent staff."
+    },
+    {
+     "type": "gross_assets_le_gbp",
+     "value": 350000,
+     "text": "Gross assets of no more than GBP 350,000 when the shares are issued."
+    },
+    {
+     "type": "text_only",
+     "text": "A new qualifying trade. Not available if the company has had EIS or VCT investment. This is a tax relief for investors, not a grant."
+    }
+   ],
+   "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
+   "sg:writtenBy": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+   "sg:sourceUrls": [
+    "https://www.gov.uk/guidance/venture-capital-schemes-apply-to-use-the-seed-enterprise-investment-scheme",
+    "https://www.gov.uk/guidance/seed-enterprise-investment-scheme"
+   ]
+  },
+  {
+   "@id": "https://startup-grants.tool.sovereignweb.site/#eis",
+   "@type": "Thing",
+   "name": "Enterprise Investment Scheme (EIS)",
+   "url": "https://www.gov.uk/guidance/venture-capital-schemes-apply-for-the-enterprise-investment-scheme",
+   "funder": {
+    "@type": "Organization",
+    "name": "HM Revenue and Customs"
+   },
+   "areaServed": [
+    "United Kingdom"
+   ],
+   "sg:stages": [
+    "early-stage",
+    "sme",
+    "scale-up"
+   ],
+   "sg:sectors": [
+    "any"
+   ],
+   "sg:deadlineType": "rolling",
+   "sg:dateChecked": "2026-11-25",
+   "sg:criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "GB"
+     ],
+     "text": "Permanent establishment in the UK."
+    },
+    {
+     "type": "fte_lt",
+     "value": 250,
+     "text": "Fewer than 250 full-time equivalent staff."
+    },
+    {
+     "type": "gross_assets_le_gbp",
+     "value": 30000000,
+     "text": "Gross assets up to GBP 30 million before the shares are issued."
+    },
+    {
+     "type": "text_only",
+     "text": "Usually within seven years of first commercial sale; knowledge-intensive companies have different limits. A tax relief for investors, not a grant."
+    }
+   ],
+   "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
+   "sg:writtenBy": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+   "sg:sourceUrls": [
+    "https://www.gov.uk/guidance/venture-capital-schemes-apply-for-the-enterprise-investment-scheme"
+   ]
+  },
+  {
+   "@id": "https://startup-grants.tool.sovereignweb.site/#invest-ni-support-for-start-ups",
+   "@type": "MonetaryGrant",
+   "name": "Support for start-ups (Invest NI)",
+   "url": "https://www.investni.com/support-for-business/support-for-start-ups",
+   "funder": {
+    "@type": "Organization",
+    "name": "Invest Northern Ireland"
+   },
+   "areaServed": [
+    "Northern Ireland"
+   ],
+   "sg:stages": [
+    "early-stage"
+   ],
+   "sg:sectors": [
+    "advanced-manufacturing",
+    "digital",
+    "life-sciences",
+    "financial-services",
+    "green-tech"
+   ],
+   "sg:deadlineType": "fixed",
+   "sg:dateChecked": "2026-11-25",
+   "sg:criteria": [
+    {
+     "type": "country_in",
+     "values": [
+      "GB-NIR"
+     ],
+     "text": "Northern Ireland."
+    },
+    {
+     "type": "text_only",
+     "text": "New or early-stage business developing innovative products or tradeable services for customers outside Northern Ireland, with the ambition to grow quickly."
+    }
+   ],
+   "sg:readBy": "a web-fetch sub-agent started by the keeper (model not recorded)",
+   "sg:writtenBy": "startup-grants.a@SovereignWebsite.dinis (Claude Sonnet 5.5, per the commit trailer)",
+   "sg:sourceUrls": [
+    "https://www.investni.com/support-for-business/support-for-start-ups",
+    "https://www.investni.com/"
+   ]
+  }
+ ]
+}
