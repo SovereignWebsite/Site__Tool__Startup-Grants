@@ -381,6 +381,35 @@
    "in_starting_list": true
   },
   {
+   "id": "exist-gruendungsstipendium",
+   "name": "EXIST Business Start-up Grant (EXIST Gruendungsstipendium)",
+   "organisation": "EXIST, a start-up funding programme of the Federal Ministry for Economic Affairs and Energy, Germany",
+   "countries": [
+    "DE"
+   ],
+   "geography": "national",
+   "kind": "programme",
+   "stages": [
+    "pre-seed",
+    "research"
+   ],
+   "sectors": [
+    "any"
+   ],
+   "funding_amount_text": "",
+   "funding_rate_text": "",
+   "how_to_apply": "Contact the founders' network at your university or research institution first; it advises on eligibility and documents. The programme's own application page gives the steps.",
+   "deadline_type": "not-stated",
+   "deadline_text": "",
+   "deadline_dates": [],
+   "eligibility_notes": "Aimed at founding ideas from research and science in the pre-founding phase: students, graduates, researchers and founding teams. A link to a university or research institution is key. The page links an eligibility check tool.",
+   "official_url": "https://www.exist.de/EXIST/Navigation/EN/Start-upFunding/EXIST-Business-Start-up-Grant/exist-business-start-up-grant.html",
+   "further_official_urls": [],
+   "date_checked": "2026-11-25",
+   "notes": "The page states no amount or deadline. It is mostly in German. The address in the starting list returned 404, so this is the current official page found by search on exist.de; the application page itself has not been read.",
+   "in_starting_list": true
+  },
+  {
    "id": "innovate-uk-ktp",
    "name": "Knowledge Transfer Partnerships",
    "organisation": "Innovate UK, part of UK Research and Innovation",
@@ -519,7 +548,7 @@
    "name": "French Tech Rise",
    "country": "FR",
    "starting_list_url": "https://lafrenchtech.gouv.fr/en/programme/french-tech-rise-2/",
-   "reason": "The address in the starting list returned 404 Not Found when read on 25 November 2026."
+   "reason": "The address in the starting list returned 404 Not Found when read on 25 November 2026. The Mission French Tech page found by search also redirects to a 404."
   },
   {
    "name": "Horizon Europe (clusters)",
@@ -552,12 +581,6 @@
    "reason": "The address in the starting list returned 404 Not Found."
   },
   {
-   "name": "EXIST Gruendungsstipendium",
-   "country": "DE",
-   "starting_list_url": "https://exist.de/en/programm/exist-gruendungsstipendium/",
-   "reason": "The address in the starting list returned 404 Not Found."
-  },
-  {
    "name": "CDTI Neotec",
    "country": "ES",
    "starting_list_url": "https://www.cdti.es/en/ayudas/neotec",
@@ -578,8 +601,8 @@
   {
    "name": "i-Lab innovation contest",
    "country": "FR",
-   "starting_list_url": "",
-   "reason": "The starting list links a news article, not an official page, and no official page has been found yet."
+   "starting_list_url": "https://www.bpifrance.fr/nos-appels-a-projets-concours/concours-dinnovation-i-lab",
+   "reason": "The starting list links a news article, not an official page. The official pages found by search (Bpifrance and the research ministry) refused the request (403), so none is written up."
   },
   {
    "name": "FFG general programme",
